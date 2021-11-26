@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Pink - раскрась серые будни в розовый цвет">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  </body>
+<body class="page__body">
+
+  <!-- Header aria -->
+
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html" alt="Логотип сайта Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link--current">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main aria -->
+
+  <main class="page-main">
+    <h1 class="visually-hidden">PINK - мобильное приложение для раскрашивания фотографий в розовый цвет!</h1>
+
+    <!-- Dounload section -->
+
+    <section class="download">
+      <div class="download__container">
+        <section class="download__wrapper">
+          <h2 class="visually-hidden">Скачать PINK на мобильный телефон</h2>
+          <p class="download__slogan">
+            Взгляните на жизнь иначе!
+          </p>
+          <a class="download__button button" href="https://www.apple.com/ios/app-store/">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download_item">
+              <a class="download_link" href="https://www.apple.com/ios/app-store/">
+                <svg class="download__logo app-store" aria-hidden="true" focusable="false" width="" height=""
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path />
+                </svg>
+                <span class="visually-hidden">Скачать приложение в App Store</span>
+              </a>
+            </li>
+            <li class="download_item">
+              <a href="https://play.google.com/store">
+                <img class="download__logo google-play" src="img/logo-android.svg"
+                  alt="Скачать приложение в Google Play" width="43" height="47">
+              </a>
+            </li>
+            <li class="download_item">
+              <a href="https://www.microsoft.com/ru-ru/">
+                <img class="download__logo microsoft-store" src="img/logo-microsoft.svg"
+                  alt="Скачать приложение в Microsoft Store" width="44" height="41">
+              </a>
+            </li>
+          </ul>
+          <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section>
+      </div>
+
+    </section>
+
+</body>
+
 </html>
