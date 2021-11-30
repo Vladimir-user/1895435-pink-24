@@ -7,9 +7,7 @@
   <title>HTML Academy: Пинк Конкурс</title>
 </head>
 
-<body>
-
-  <!-- Header aria -->
+<body class="page__body">
 
   <header class="page-header">
     <div class="page-header__container">
@@ -27,7 +25,7 @@
             <a class="main-menu__link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__link--current">Фотографии</a>
+            <a class="main-menu__link main-menu__link--current">Фотографии</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="form.html">Конкурс</a>
@@ -40,26 +38,20 @@
     </div>
   </header>
 
-  <!-- Main aria -->
-
   <main class="page-main">
     <section class="headline">
       <h1 class="headline__text">Фотографии пользователей</h1>
     </section>
 
-    <!-- Photo aria -->
-
     <section class="photo">
       <h2 class="visually-hidden">Галерея фотографий</h2>
-      <div class="photo__text">
-        <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
-        </p>
-      </div>
+      <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
       <div class="photo-gallery">
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image--full" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image gallery__image--full" src="" width="" height="" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher publisher">
               <b class="publisher__name">Анна</b>
@@ -68,13 +60,10 @@
             <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
               трансляцию в перископе, задавайте свои вопросы!
             </p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 215</span>
-            </div>
-            <div class="gallery__panorama">
-              <span class="panorama">Панорама дня</span>
-            </div>
+            </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
@@ -85,10 +74,10 @@
               <time class="publisher__time" datetime="2021-11-29T15:15">(5 часов назад)</time>
             </p>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 356</span>
-            </div>
+            </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
@@ -99,10 +88,10 @@
               <time class="publisher__time" datetime="2021-11-29T15:15">(12 часов назад)</time>
             </p>
             <p class="gallery__text">Соседи будут рады!</p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 666</span>
-            </div>
+            </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
@@ -113,10 +102,10 @@
               <time class="publisher__time" datetime="2021-11-29T15:15">(20 часов назад)</time>
             </p>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 215</span>
-            </div>
+            </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
@@ -127,10 +116,10 @@
               <time class="publisher__time" datetime="2021-11-29T15:15">(25 часов назад)</time>
             </p>
             <p class="gallery__text">Самая кубанская в мире!</p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 4</span>
-            </div>
+            </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
@@ -141,10 +130,10 @@
               <time class="publisher__time" datetime="2021-11-29T15:15">(40 часов назад)</time>
             </p>
             <p class="gallery__text">Где снег-то?</p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 150</span>
-            </div>
+            </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
@@ -155,52 +144,47 @@
               <time class="publisher__time" datetime="2021-11-29T15:15">(45 часов назад)</time>
             </p>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
-            <div class="gallery__like like">
+            <p class="gallery__like like">
               <button class="like__button" type="button" aria-label="Нравится!"></button>
               <span class="like__count">Нравится: 2560</span>
-            </div>
+            </p>
           </li>
         </ul>
       </div>
-      <div class="photo__text">
-        <p class="photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-      </div>
+      <p class="photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="editor">
       <h2 class="visually-hidden">Отредактируйте и загрузите свою фотографию</h2>
       <div class="editor__container">
         <form class="form-editor" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
-          <input class="form-editor__file--load visually-hidden" type="file" id="image" name="image">
-          <label class="form-editor__label visually-hidden" for="image" aria-label="Загрузите изображение"></label>
-          <div class="form-editor__image-wrapper">
-            <img class="form-editor__image" src="" width="" height="" alt="Фотография пользователя">
-          </div>
-          <div class="form-editor__controls">
-            <div class="form-editor__filter filters">
-              <ul class="filters__list">
-                <li class="filters__item">
-                  <button class="filters__button--active" type="button" aria-label="Обрезка">
-                    <svg class="filters__icon" width="" height="">
+          <div class="form-editor__image-wrapper"></div>
+          <input class="form-editor__file" type="file" id="image" name="image">
+          <label class="form-editor__label" for="image" aria-label="Загрузите изображение"></label>
+          <img class="form-editor__image" src="" width="" height="" alt="Фотография пользователя">
+          <div class="form-editor__controls filters">
+            <ul class="filters__list">
+              <li class="filters__item">
+                <button class="filters__button--active" type="button" aria-label="Обрезка">
+                  <svg class="filters__icon" width="" height="">
 
-                    </svg>
-                  </button>
-                </li>
-                <li class="filters__item">
-                  <button class="filters__button" type="button" aria-label="Заливка">
-                    <svg class="filters__icon" width="" height="">
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__item">
+                <button class="filters__button" type="button" aria-label="Заливка">
+                  <svg class="filters__icon" width="" height="">
 
-                    </svg>
-                  </button>
-                </li>
-                <li class="filters__item">
-                  <button class="filters__button" type="button" aria-label="Контрастность">
-                    <svg class="filters__icon" width="" height="">
+                  </svg>
+                </button>
+              </li>
+              <li class="filters__item">
+                <button class="filters__button" type="button" aria-label="Контрастность">
+                  <svg class="filters__icon" width="" height="">
 
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-            </div>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </div>
           <div class="form-editor__filter-range">
             <input class="form-editor__range" type="range" min="1" max="100" name="change" value="80">
@@ -214,8 +198,6 @@
       </div>
     </section>
   </main>
-
-  <!-- Footer aria -->
 
   <footer class="page-footer">
     <div class="page-footer__container">
