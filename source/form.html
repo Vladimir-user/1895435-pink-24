@@ -54,18 +54,15 @@
             <ul class="user__list">
               <li class="user__item">
                 <label class="user__label" for="surname">Фамилия:</label>
-                <input class="user__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *"
-                  required>
+                <input class="user__input-text" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="user__item">
                 <label class="user__label" for="name">Имя:</label>
-                <input class="user__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя *"
-                  required>
+                <input class="user__input-text" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="user__item">
                 <label class="user__label" for="patronymic">Отчество:</label>
-                <input class="user__input-text" type="text" id="patronymic" name="patronymic"
-                  placeholder="Ну и отчество тоже">
+                <input class="user__input-text" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
@@ -77,31 +74,27 @@
             </legend>
             <ul class="achievements__list">
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" id="shark" name="achivments" value="shark"
-                  checked>
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="shark" name="achivments" value="shark" checked>
                 <label class="achievements__label" for="shark">Сделал селфи с акулой</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" id="beach" name="achivments" value="beach"
-                  checked>
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="beach" name="achivments" value="beach" checked>
                 <label class="achievements__label" for="beach">Обгорел на пляже</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" id="chuck" name="achivments" value="chuck">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="chuck" name="achivments" value="chuck">
                 <label class="achievements__label" for="chuck">Видел Чака Норриса</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" id="souvenirs" name="achivments"
-                  value="souvenirs">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="souvenirs" name="achivments" value="souvenirs">
                 <label class="achievements__label" for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" id="tower" name="achivments" value="tower"
-                  checked>
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="tower" name="achivments" value="tower" checked>
                 <label class="achievements__label" for="tower">Удержал башню</label>
               </li>
               <li class="achievements__item">
-                <input class="achievements__checkbox" type="checkbox" id="hotel" name="achivments" value="hotel">
+                <input class="achievements__checkbox visually-hidden" type="checkbox" id="hotel" name="achivments" value="hotel">
                 <label class="achievements__label" for="hotel">Разгромил отель</label>
               </li>
             </ul>
@@ -119,8 +112,7 @@
               </li>
               <li class="contacts__item">
                 <label class="contacts__label" for="email">Адрес почты</label>
-                <input class="contacts__input" type="email" id="email" name="email" placeholder="Введите почту *"
-                  required>
+                <input class="contacts__input" type="email" id="email" name="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -132,15 +124,15 @@
             </legend>
             <ul class="apps__list">
               <li class="apps__item">
-                <input class="apps__radio" type="radio" id="ios" name="apps" value="ios" checked>
+                <input class="apps__radio visually-hidden" type="radio" id="ios" name="apps" value="ios" checked>
                 <label class="apps__label" for="ios">Pink для iOS</label>
               </li>
               <li class="apps__item">
-                <input class="apps__radio" type="radio" id="android" name="apps" value="android">
+                <input class="apps__radio visually-hidden" type="radio" id="android" name="apps" value="android">
                 <label class="apps__label" for="android">Pink на Android</label>
               </li>
               <li class="apps__item">
-                <input class="apps__radio" type="radio" id="windows" name="apps" value="windows">
+                <input class="apps__radio visually-hidden" type="radio" id="windows" name="apps" value="windows">
                 <label class="apps__label" for="windows">Windows Phone</label>
               </li>
             </ul>
@@ -151,18 +143,14 @@
             <legend class="comments__legend">
               <span class="comments__title">Опишите свои эмоции</span>
             </legend>
-            <textarea class="comments__textarea" name="comments"
-              placeholder="Можно прям в красках, не стесняясь в выражениях">
+            <textarea class="comments__textarea" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях">
             </textarea>
           </fieldset>
         </div>
 
         <div class="comments__submit">
           <button class="comments__button button" type="submit">Отправить форму</button>
-          <p class="comments__demand">
-            <span class="comments__demand--red">*</span>
-            — обязательные поля
-          </p>
+          <p class="comments__demand"><span class="comments__asterix">*</span> — обязательные поля</p>
         </div>
       </form>
     </section>
