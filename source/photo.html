@@ -47,15 +47,15 @@
       <h2 class="visually-hidden">Галерея фотографий</h2>
       <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
-      <div class="photo-gallery">
+      <div class="gallery">
         <ul class="gallery__list">
           <li class="gallery__item">
             <a class="gallery__link" href="#">
               <img class="gallery__image gallery__image--full" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Анна</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(5 минут назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Анна</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 минут назад)</time>
             </p>
             <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <p class="gallery__like like">
@@ -67,9 +67,9 @@
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Левон</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(5 часов назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Левон</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 часов назад)</time>
             </p>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="gallery__like like">
@@ -81,9 +81,9 @@
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Антон</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(12 часов назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Антон</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(12 часов назад)</time>
             </p>
             <p class="gallery__text">Соседи будут рады!</p>
             <p class="gallery__like like">
@@ -95,9 +95,9 @@
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Борис</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(20 часов назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Борис</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(20 часов назад)</time>
             </p>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="gallery__like like">
@@ -109,9 +109,9 @@
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Сергей</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(25 часов назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Сергей</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(25 часов назад)</time>
             </p>
             <p class="gallery__text">Самая кубанская в мире!</p>
             <p class="gallery__like like">
@@ -123,9 +123,9 @@
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Максим</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(40 часов назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Максим</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(40 часов назад)</time>
             </p>
             <p class="gallery__text">Где снег-то?</p>
             <p class="gallery__like like">
@@ -137,9 +137,9 @@
             <a class="gallery__link" href="#">
               <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
             </a>
-            <p class="gallery__publisher publisher">
-              <b class="publisher__name">Надежда</b>
-              <time class="publisher__time" datetime="2021-11-29T15:15">(45 часов назад)</time>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Надежда</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(45 часов назад)</time>
             </p>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
             <p class="gallery__like like">
@@ -149,10 +149,10 @@
           </li>
         </ul>
       </div>
-      <p class="photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="editor">
       <h2 class="visually-hidden">Отредактируйте и загрузите свою фотографию</h2>
+      <p class="editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
       <div class="editor__container">
         <form class="form-editor" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
           <div class="form-editor__image-wrapper">
@@ -160,37 +160,35 @@
             <label class="form-editor__label" for="image" aria-label="Загрузите изображение"></label>
             <img class="form-editor__image" src="" width="" height="" alt="Фотография пользователя">
           </div>
-          <div class="form-editor__controls filters">
-            <ul class="filters__list">
-              <li class="filters__item">
-                <button class="filters__button filters__button--current" type="button" aria-label="Обрезка">
-                  <svg class="filters__icon" width="" height="">
+          <div class="form-editor__controls">
+            <ul class="form-editor__list">
+              <li class="form-editor__item">
+                <button class="form-editor__button form-editor__button--current" type="button" aria-label="Обрезка">
+                  <svg class="form-editor__icon" width="" height="">
 
                   </svg>
                 </button>
               </li>
-              <li class="filters__item">
-                <button class="filters__button" type="button" aria-label="Заливка">
-                  <svg class="filters__icon" width="" height="">
+              <li class="form-editor__item">
+                <button class="form-editor__button" type="button" aria-label="Заливка">
+                  <svg class="form-editor__icon" width="" height="">
 
                   </svg>
                 </button>
               </li>
-              <li class="filters__item">
-                <button class="filters__button" type="button" aria-label="Контрастность">
-                  <svg class="filters__icon" width="" height="">
+              <li class="form-editor__item">
+                <button class="form-editor__button" type="button" aria-label="Контрастность">
+                  <svg class="form-editor__icon" width="" height="">
 
                   </svg>
                 </button>
               </li>
             </ul>
-          </div>
-          <div class="form-editor__filter-range">
             <input class="form-editor__range" type="range" min="1" max="100" name="range" value="80">
           </div>
           <div class="form-editor__buttons">
-            <button class="form-editor__button form-editor__button--current" type="submit" aria-label="Запостить">Запостить</button>
-            <button class="form-editor__button" type="reset" aria-label="Отмена">Отмена</button>
+            <button class="form-editor__button form-editor__button--submit" type="submit">Запостить</button>
+            <button class="form-editor__button" type="reset">Отмена</button>
           </div>
         </form>
       </div>
