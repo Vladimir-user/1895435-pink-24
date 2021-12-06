@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Pink - раскрась серые будни в розовый цвет">
+  <title>HTML Academy: Пинк Конкурс</title>
+</head>
+
+<body class="page__body">
+
+  <header class="page-header">
+    <div class="page-header__container">
+      <a class="page-header__logo" href="index.html" aria-label="Логотип сайта Pink">
+        <svg class="page-header__logo-img" width="" height="">
+
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--current">Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="headline">
+      <h1 class="headline__text">Фотографии пользователей</h1>
+    </section>
+
+    <section class="photo">
+      <h2 class="visually-hidden">Галерея фотографий</h2>
+      <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
+      <div class="gallery">
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image gallery__image--full" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Анна</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 минут назад)</time>
+            </p>
+            <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 215</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Левон</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 часов назад)</time>
+            </p>
+            <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 356</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Антон</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(12 часов назад)</time>
+            </p>
+            <p class="gallery__text">Соседи будут рады!</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 666</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Борис</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(20 часов назад)</time>
+            </p>
+            <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 215</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Сергей</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(25 часов назад)</time>
+            </p>
+            <p class="gallery__text">Самая кубанская в мире!</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 4</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Максим</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(40 часов назад)</time>
+            </p>
+            <p class="gallery__text">Где снег-то?</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 150</span>
+            </p>
+          </li>
+          <li class="gallery__item">
+            <a class="gallery__link" href="#">
+              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+            </a>
+            <p class="gallery__publisher">
+              <b class="gallery__publisher-name">Надежда</b>
+              <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(45 часов назад)</time>
+            </p>
+            <p class="gallery__text">Всем GM и взаимные лайки!</p>
+            <p class="gallery__like like">
+              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="like__count">Нравится: 2560</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="editor">
+      <h2 class="visually-hidden">Отредактируйте и загрузите свою фотографию</h2>
+      <p class="editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="editor__container">
+        <form class="form-editor" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+          <div class="form-editor__image-wrapper">
+            <input class="form-editor__file" type="file" id="image" name="image">
+            <label class="form-editor__label" for="image" aria-label="Загрузите изображение"></label>
+            <img class="form-editor__image" src="" width="" height="" alt="Фотография пользователя">
+          </div>
+          <div class="form-editor__controls">
+            <ul class="form-editor__list">
+              <li class="form-editor__item">
+                <button class="form-editor__button form-editor__button--current" type="button" aria-label="Обрезка">
+                  <svg class="form-editor__icon" width="" height="">
+
+                  </svg>
+                </button>
+              </li>
+              <li class="form-editor__item">
+                <button class="form-editor__button" type="button" aria-label="Заливка">
+                  <svg class="form-editor__icon" width="" height="">
+
+                  </svg>
+                </button>
+              </li>
+              <li class="form-editor__item">
+                <button class="form-editor__button" type="button" aria-label="Контрастность">
+                  <svg class="form-editor__icon" width="" height="">
+
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <input class="form-editor__range" type="range" min="1" max="100" name="range" value="80">
+          </div>
+          <div class="form-editor__buttons">
+            <button class="form-editor__button form-editor__button--submit" type="submit">Запостить</button>
+            <button class="form-editor__button" type="reset">Отмена</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <a class="page-footer__logo" href="index.html" aria-label="Логотип сайта Pink">
+        <svg class="page-footer__logo-img" width="" height="">
+
+        </svg>
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="https://twitter.com" aria-label="Twitter">
+              <svg class="social__icon" width="" height="">
+
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com" aria-label="Facebook">
+              <svg class="social__icon" width="" height="">
+
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com" aria-label="Youtube">
+              <svg class="social__icon" width="" height="">
+
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru" aria-label="Логотип HTML Academy">
+          <svg class="page-footer__copyright-icon" width="" height="">
+
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
