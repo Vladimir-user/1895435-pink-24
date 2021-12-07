@@ -1,0 +1,33 @@
+.slider-toggle {
+  display: grid;
+  grid-template-columns: repeat(3, 12px);
+  column-gap: 19px;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+.slider-toggle__button {
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  background-color: fade(@dark-gray, 30%);
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &--current {
+    box-shadow: 0 0 0 3px @dark-gray;
+    background-color: transparent;
+    cursor: default;
+  }
+
+  &:not(&--current):hover {
+    background-color: fade(@dark-gray, 60%);
+  }
+
+  &:not(&--current):active {
+    background-color: fade(@dark-gray, 10%);
+  }
+}
