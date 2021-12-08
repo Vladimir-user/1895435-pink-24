@@ -1,11 +1,15 @@
 .table-tariff {
+  position: relative;
   border-collapse: collapse;
+  width: 183%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .table-tariff__header {
   width: 276px;
   height: 94px;
-  padding: 0px;
+  padding: 0;
   background-color: @dark-gray;
   box-sizing: border-box;
   text-align: center;
@@ -50,13 +54,17 @@
 }
 
 .table-tariff__value {
-  display: inline-block;
+  display: block;
+  float: right;
   width: 31px;
   height: 31px;
   font-size: 0;
-  
+
   &--yes {
     background: url("../img/icon-yes.svg") no-repeat center;
+  }
 
-    }
+  &--not {
+    background: url("../img/icon-no.svg") no-repeat center;
+  }
 }

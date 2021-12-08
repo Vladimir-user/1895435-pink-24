@@ -1,0 +1,21 @@
+.map {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 200px;
+  background-image: url("../img/map-mobile.jpg");
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: (@mobile-width / 2) solid transparent;
+    border-top: (@mobile-width / 10) solid @white;
+  }
+
+  &::before {
+
+  }
+}
