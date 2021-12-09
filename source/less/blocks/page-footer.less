@@ -1,0 +1,39 @@
+.page-footer {
+  min-width: @mobile-width;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: @mobile-width;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 145px;
+  height: 40px;
+  background: url("../img/pink-glasses.svg") left no-repeat;
+  outline: none;
+
+  &:hover path {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: @dark-gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-img {
+  margin: 17px 0 0 71px;
+}

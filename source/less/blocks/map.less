@@ -5,6 +5,7 @@
   height: 200px;
   background-image: url("../img/map-mobile.jpg");
   margin: 0 auto;
+  margin-bottom: 40px;
 
   &::after {
     content: "";
@@ -16,6 +17,13 @@
   }
 
   &::before {
-
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    left: (@mobile-width / 2 - 18);
+    background-image: url(../img/map-marker.svg);
   }
 }
