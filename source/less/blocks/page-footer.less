@@ -12,6 +12,7 @@
   min-width: @mobile-width;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .page-footer__logo {
@@ -20,6 +21,7 @@
   height: 40px;
   background: url("../img/pink-glasses.svg") left no-repeat;
   outline: none;
+  margin-bottom: 40px;
 
   &:hover path {
     fill: @pink;
@@ -36,4 +38,19 @@
 
 .page-footer__logo-img {
   margin: 17px 0 0 71px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__copyright-link {
+  &:hover path {
+    fill:@dark-gray;
+  }
+
+  &:active path {
+    fill: fade(@dark-gray, 0.3);
+  }
 }
