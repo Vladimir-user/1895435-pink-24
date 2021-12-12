@@ -1,0 +1,137 @@
+.contest-form {
+  background-color: @light-gray;
+  min-width: @mobile-width;
+}
+
+.contest-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  &--user {
+    background-color: @white;
+    padding-bottom: 10px;
+  }
+
+  &--contacts {
+    background-color: @white;
+    padding: 13px 0;
+  }
+
+  &--comments {
+    background-color: @white;
+  }
+}
+
+.contest-form__list {
+  list-style-type: none;
+  padding: 0;
+
+  &--achivments {
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+
+  &--apps {
+    margin: 11px 0 0 -2px;
+  }
+}
+
+.contest-form__label {
+  margin-left: 24px;
+  color: @pink;
+  line-height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contest-form__label-check {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__legend {
+  max-width: 220px;
+  line-height: 18px;
+  color: @pink;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 0 28px 0;
+
+  &--apps {
+    padding-top: 37px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.contest-form__input-text {
+  display: block;
+  width: 238px;
+  height: 59px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @middle-gray;
+  margin: 5px 0 17px 0;
+}
+
+.contest-form__item-achivments {
+  padding-bottom: 52px;
+  position: relative;
+}
+
+.contest-form__item-apps {
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.contest-form__checkbox + .contest-form__label-check::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-top: -5px;
+  margin-left: -60px;
+  border: 2px solid @middle-gray;
+  background-color: @white;
+}
+
+.contest-form__checkbox:checked + .contest-form__label-check::before {
+  background: @white url("../img/pink-tick.svg") center no-repeat;
+  z-index: 1;
+}
+
+.contest-form__radio + .contest-form__label-check::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-top: -4px;
+  margin-left: -70px;
+  border: 2px solid @middle-gray;
+  background-color: @white;
+  border-radius: 50%;
+}
+
+.contest-form__radio:checked + .contest-form__label-check::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: -58px;
+  width: 15px;
+  height: 15px;
+  color: @pink;
+  background-color: @pink;
+  border-radius: 50%;
+  z-index: 1;
+}
+

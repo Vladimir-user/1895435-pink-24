@@ -10,7 +10,19 @@
   background-position-x: center;
   background-size: 320px 462px;
   color: @white;
-  margin-bottom: 46px;
+  position: relative;
+  top: -66px;
+  z-index: -1;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-top: 176px;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/hand-mobile.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .download__wrapper {
@@ -20,6 +32,8 @@
 }
 
 .download__slogan {
+  position: absolute;
+  top: 65px;
   width: 280px;
   text-align: center;
   font-size: 24px;
@@ -29,16 +43,17 @@
 
 .download__button {
   display: block;
-  width: 280px;
-  height: 55px;
+  width: 276px;
+  height: 50px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 51px;
   color: @white;
   border: 3px solid @white;
   border-radius: 55px;
   text-decoration: none;
+  margin: 28px 0 31px 0;
 }
 
 .download__list {
@@ -49,14 +64,14 @@
   width: 205px;
   list-style-type: none;
   padding: 0;
-  margin: 31px 0 0 0;
+  margin: 0;
 }
 
 .download__info {
   width: 240px;
-  margin-top: 18px;
   text-align: center;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  margin-bottom: 31px;
 }
