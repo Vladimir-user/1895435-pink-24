@@ -12,7 +12,6 @@
   color: @white;
   position: relative;
   top: -66px;
-  z-index: -1;
 
   &::before {
     content: "";
@@ -29,6 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 2;
 }
 
 .download__slogan {
@@ -54,6 +54,18 @@
   border-radius: 55px;
   text-decoration: none;
   margin: 28px 0 31px 0;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: @white;
+    color: @pink;
+  }
+
+  &:active {
+    color: lighten(@pink, 30%);
+  }
 }
 
 .download__list {
@@ -74,4 +86,8 @@
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 31px;
+}
+
+.download__link {
+  cursor: pointer;
 }

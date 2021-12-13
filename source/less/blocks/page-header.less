@@ -5,6 +5,7 @@
   padding: 0;
   background-color: @bg-color-header;
   color: @white;
+  position: relative;
   z-index: 1;
 }
 
@@ -22,6 +23,15 @@
 .page-header__logo {
   outline: none;
   margin-top: 5px;
+
+  &:hover path,
+  &:focus path {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .page-header__toggle {
@@ -31,4 +41,13 @@
   margin: 0;
   outline: none;
   cursor: pointer;
+
+  &:hover path,
+  &:focus path {
+    fill: @pink;
+  }
+
+  &:active path {
+    opacity: 30%;
+  }
 }

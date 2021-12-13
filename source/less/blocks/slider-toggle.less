@@ -23,7 +23,8 @@
     cursor: default;
   }
 
-  &:not(&--current):hover {
+  &:not(&--current):hover,
+  &:not(&--current):focus {
     background-color: fade(@dark-gray, 60%);
   }
 

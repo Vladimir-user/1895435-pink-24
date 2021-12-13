@@ -23,7 +23,8 @@
   outline: none;
   margin-bottom: 40px;
 
-  &:hover path {
+  &:hover path,
+  &:focus path {
     fill: @pink;
   }
 
@@ -46,7 +47,10 @@
 }
 
 .page-footer__copyright-link {
-  &:hover path {
+  outline: none;
+
+  &:hover path,
+  &:focus path {
     fill:@dark-gray;
   }
 
