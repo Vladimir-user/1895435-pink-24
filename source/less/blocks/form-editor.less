@@ -3,20 +3,25 @@
   background-color: @light-gray;
 }
 
+.form-editor__image {
+  margin-top: 22px;
+  margin-bottom: 35px;
+}
+
 .form-editor__file,
 .form-editor__label {
   display: none;
 }
 
 .form-editor__list {
-  width: 280px;
+  width: 230px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 17px 0;
 }
 
 .form-editor__controls {
@@ -25,6 +30,10 @@
 
 .form-editor__toggle {
   .page-header__toggle;
+
+  &:hover path {
+    fill: rgba(40, 54, 69, 0.5);
+  }
 }
 
 .form-editor__range {
@@ -32,21 +41,57 @@
   width: 240px;
   height: 2px;
   background-color: @dark-gray;
+  outline: none;
+  margin-bottom: 64px;
 
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     background-color: @white;
     border: 2px solid @pink;
     border-radius: 50%;
     cursor: pointer;
+
+    &:active {
+      background-color: @pink;
+    }
   }
 }
 
 .form-editor__button {
-  .download__button {
+  .download__button;
     color: @pink;
     border: 3px solid @pink;
-  }
+    line-height: 18px;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+      background-color: @pink;
+      color: @white;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+
+    &--cancel {
+      color: fade(@dark-gray, 10%);
+      border: 3px solid fade(@dark-gray, 10%);
+
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        border: 3px solid fade(@dark-gray, 30%);
+        color: fade(@dark-gray, 30%);
+      }
+
+      &:active {
+        background-color: fade(@dark-gray, 30%);
+        color: fade(@white, 30%);
+      }
+    }
 }

@@ -3,7 +3,9 @@
 }
 
 .gallery__list {
-  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -15,16 +17,79 @@
   justify-content: start;
   align-items: start;
   background-color: @light-gray;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  width: 280px;
 }
 
 .gallery__link {
   margin: 0 auto;
+  position: relative;
+  display: block;
+  line-height: 0;
+
+  &--panorama::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 20px;
+    color: @white;
+    background-color: @pink;
+    text-align: center;
+    font-size: 12px;
+    line-height: 35px;
+    }
 }
 
-.gallery__publisher,
-.gallery__text,
-.gallery__like {
-  width: 280px;
+.gallery__publisher {
   padding: 0 17px;
+  margin: 18px 0 0 0;
 }
+
+.gallery__text {
+  padding: 0 17px;
+  margin: 0;
+}
+
+.gallery__like {
+  padding: 0 17px;
+  margin: 12px 0 14px 0;
+}
+
+.gallery__like {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__button {
+  width: 13px;
+  height: 12px;
+  background: transparent url(../img/like-icon.svg) center no-repeat;
+  border: 0;
+  margin-right: 18px;
+  outline: none;
+  cursor: pointer;
+}
+
+.gallery__count {
+  color: @pink;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/*
+.gallery__image {
+  position: relative;
+
+  &--panaroma::before {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    top: 10px;
+    left: 10px;
+    color: @white;
+    background-color: @pink;
+  }
+}
+*/

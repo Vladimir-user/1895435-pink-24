@@ -52,7 +52,7 @@
 
   <main class="page-main">
     <section class="headline">
-      <h1 class="headline__text">Фотографии пользователей</h1>
+      <h1 class="headline__text headline__text--photo">Фотографии пользователей</h1>
     </section>
 
     <section class="photo">
@@ -60,11 +60,11 @@
       <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <div class="gallery">
+        <a class="gallery__link gallery__link--panorama" href="#">
+          <img class="gallery__image" src="img/photo/bridge-mobile.jpg" width="320" height="137" alt="Фотография пользователя">
+        </a>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image gallery__image--full" src="img/photo/bridge-mobile.jpg" width="320" height="137" alt="Фотография пользователя">
-            </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Анна</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 минут назад)</time>
@@ -201,11 +201,11 @@
               </button>
             </li>
           </ul>
-          <input class="form-editor__range" type="range" min="1" max="100" name="range" value="80">
+          <input class="form-editor__range" type="range" min="1" max="100" name="range" value="86">
         </div>
         <div class="form-editor__buttons">
-          <button class="form-editor__button form-editor__button--submit" type="submit">Запостить</button>
-          <button class="form-editor__button" type="reset">Отмена</button>
+          <button class="form-editor__button" type="submit">Запостить</button>
+          <button class="form-editor__button form-editor__button--cancel" type="reset">Отмена</button>
         </div>
       </form>
     </section>
