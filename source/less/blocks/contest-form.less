@@ -5,7 +5,7 @@
   width: 100%;
 }
 
-.contest-form__background {
+.contest-form__wrapper {
   background-color: @light-gray;
   width: 100%;
 }
@@ -32,7 +32,7 @@
   list-style-type: none;
   padding: 0;
 
-  &--achivments {
+  &--achievements {
     margin-left: 40px;
     margin-bottom: 0;
   }
@@ -98,14 +98,17 @@
   }
 }
 
-.contest-form__item-achivments {
+.contest-form__item {
+
+  &--achievements {
   padding-bottom: 52px;
   position: relative;
-}
+  }
 
-.contest-form__item-apps {
-  padding-bottom: 45px;
-  position: relative;
+  &--apps {
+    padding-bottom: 45px;
+    position: relative;
+  }
 }
 
 .contest-form__checkbox + .contest-form__label-check::before {
