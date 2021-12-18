@@ -3,27 +3,16 @@
   position: relative;
   width: 320px;
   height: 200px;
-  background-image: url("../img/map-mobile.jpg");
+  background: url("../img/map-marker.svg") top 95px center no-repeat, url("../img/map-mobile.jpg") center no-repeat;
   margin: 0 auto;
   margin-bottom: 40px;
 
-  &::after {
+  &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     border: (@mobile-width / 2) solid transparent;
     border-top: (@mobile-width / 10) solid @white;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    width: 36px;
-    height: 36px;
-    top: 48%;
-    left: (@mobile-width / 2 - 18);
-    background-image: url("../img/map-marker.svg");
   }
 }

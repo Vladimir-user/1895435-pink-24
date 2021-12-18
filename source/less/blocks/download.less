@@ -2,69 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @dark-blue;
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: 320px 462px;
+  background: url("../img/hand-mobile.png") top 176px center/320px 286px no-repeat, @dark-blue url("../img/back-mobile.jpg") top/320px 462px no-repeat;
   color: @white;
   position: relative;
   margin-bottom: 41px;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    //margin-top: 176px;
-    width: 320px;
-    height: 286px;
-    background-image: url("../img/hand-mobile.png");
-    background-repeat: no-repeat;
-  }
-}
-
-.download__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 2;
 }
 
 .download__slogan {
-  position: absolute;
-  top: 65px;
   width: 280px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
-}
-
-.download__button {
-  display: block;
-  width: 276px;
-  height: 50px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 51px;
-  color: @white;
-  border: 3px solid @white;
-  border-radius: 55px;
-  text-decoration: none;
-  margin: 28px 0 31px 0;
-  cursor: pointer;
-  outline: none;
-
-  &:hover,
-  &:focus {
-    background-color: @white;
-    color: @pink;
-  }
-
-  &:active {
-    color: lighten(@pink, 30%);
-  }
+  padding-top: 90px;
+  padding-bottom: 317px;
+  margin: 0;
 }
 
 .download__list {

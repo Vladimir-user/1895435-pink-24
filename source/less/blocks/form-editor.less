@@ -4,7 +4,7 @@
 }
 
 .form-editor__image {
-  margin-top: 22px;
+  margin-top: 20px;
   margin-bottom: 35px;
 }
 
@@ -29,7 +29,12 @@
 }
 
 .form-editor__toggle {
-  .page-header__toggle;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
 
   &:hover path {
     fill: rgba(40, 54, 69, 0.5);
@@ -59,39 +64,6 @@
   }
 }
 
-.form-editor__button {
-  .download__button;
-    color: @pink;
-    border: 3px solid @pink;
-    line-height: 18px;
-    height: 55px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    &:hover,
-    &:focus {
-      background-color: @pink;
-      color: @white;
-    }
-
-    &:active {
-      color: fade(@white, 30%);
-    }
-
-    &--cancel {
-      color: fade(@dark-gray, 10%);
-      border: 3px solid fade(@dark-gray, 10%);
-
-      &:hover,
-      &:focus {
-        background-color: transparent;
-        border: 3px solid fade(@dark-gray, 30%);
-        color: fade(@dark-gray, 30%);
-      }
-
-      &:active {
-        background-color: fade(@dark-gray, 30%);
-        color: fade(@white, 30%);
-      }
-    }
+.form-editor__buttons {
+  padding-bottom: 47px;
 }

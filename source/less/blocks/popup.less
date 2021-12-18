@@ -1,19 +1,18 @@
-.popup__sent {
+.popup {
   display: block;
-  position: absolute;
+  position: fixed;
   width: @mobile-width;
-  top: 207%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   background-color: @white;
   z-index: 2;
+}
+
+.popup__sent {
 
   &--close {
     display: none;
-  }
-
-  &--open {
-    display: block;
   }
 }
 
