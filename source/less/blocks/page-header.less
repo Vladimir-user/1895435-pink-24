@@ -1,0 +1,49 @@
+.page-header {
+  position: absolute;
+  width: @mobile-width;
+  left: 50%;
+  background-color: @bg-color-header;
+  color: @white;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.page-header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+
+.page-header__logo {
+  outline: none;
+  margin-top: 5px;
+
+  &:hover path,
+  &:focus path {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.page-header__toggle {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &:hover path,
+  &:focus path {
+    fill: @pink;
+  }
+
+  &:active path {
+    opacity: 30%;
+  }
+}

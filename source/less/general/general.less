@@ -1,0 +1,76 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  width: 276px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 55px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+
+  &--download {
+    font-weight: 700;
+    line-height: 51px;
+    color: @white;
+    border: 3px solid @white;
+    margin: 27px 0 31px 0;
+
+    &:hover,
+    &:focus {
+      background-color: @white;
+      color: @pink;
+    }
+
+    &:active {
+      color: lighten(@pink, 30%);
+    }
+  }
+
+  &--submit {
+    color: @pink;
+    border: 3px solid @pink;
+    line-height: 18px;
+    height: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus {
+      background-color: @pink;
+      color: @white;
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+  }
+
+  &--cancel {
+    color: fade(@dark-gray, 10%);
+    border: 3px solid fade(@dark-gray, 10%);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border: 3px solid fade(@dark-gray, 30%);
+      color: fade(@dark-gray, 30%);
+    }
+
+    &:active {
+      background-color: fade(@dark-gray, 30%);
+      color: fade(@white, 30%);
+    }
+  }
+}

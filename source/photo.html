@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Pink - раскрась серые будни в розовый цвет">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>HTML Academy: Пинк Конкурс</title>
 </head>
 
@@ -12,35 +17,42 @@
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo" href="index.html" aria-label="Логотип сайта Pink">
-        <svg class="page-header__logo-img" width="" height="">
-
+        <svg class="page-header__logo-img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="20px" y="22px" width="74" height="23">
+          <path
+            d="M.005 1.549A1.286 1.286 0 0 1 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04zM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389zm9.081.03A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874V21.65a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04zm25.264-.03a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.27 1.27 0 0 1-.096-.485V1.389h-.01z"
+            fill="#fff" />
         </svg>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-menu">
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--current">Фотографии</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+        <svg class="page-header__icon" aria-hidden="true" focusable="false" width="50" height="24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137Zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137Z"
+            fill="#fff" />
+        </svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
+    <nav class="main-nav">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--current">Фотографии</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page__main">
     <section class="headline">
-      <h1 class="headline__text">Фотографии пользователей</h1>
+      <h1 class="headline__text headline__text--photo">Фотографии пользователей</h1>
     </section>
 
     <section class="photo">
@@ -48,103 +60,103 @@
       <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <div class="gallery">
+        <a class="gallery__link gallery__link--panorama" href="#">
+          <img class="gallery__image" src="img/photo/bridge-mobile.jpg" width="320" height="137" alt="Фотография пользователя">
+        </a>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <a class="gallery__link" href="#">
-              <img class="gallery__image gallery__image--full" src="" width="" height="" alt="Фотография пользователя">
-            </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Анна</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 минут назад)</time>
             </p>
             <p class="gallery__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 215</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 215</span>
             </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image" src="img/photo/car-mobile.jpg" width="280" height="180" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Левон</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(5 часов назад)</time>
             </p>
             <p class="gallery__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 356</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 356</span>
             </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image" src="img/photo/drum-mobile.jpg" width="280" height="180" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Антон</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(12 часов назад)</time>
             </p>
             <p class="gallery__text">Соседи будут рады!</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 666</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 666</span>
             </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image" src="img/photo/windows-mobile.jpg" width="280" height="180" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Борис</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(20 часов назад)</time>
             </p>
             <p class="gallery__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 215</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 215</span>
             </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image" src="img/photo/field-mobile.jpg" width="280" height="180" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Сергей</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(25 часов назад)</time>
             </p>
             <p class="gallery__text">Самая кубанская в мире!</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 4</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 4</span>
             </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image" src="img/photo/legs-mobile.jpg" width="280" height="180" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Максим</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(40 часов назад)</time>
             </p>
             <p class="gallery__text">Где снег-то?</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 150</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 150</span>
             </p>
           </li>
           <li class="gallery__item">
             <a class="gallery__link" href="#">
-              <img class="gallery__image" src="" width="" height="" alt="Фотография пользователя">
+              <img class="gallery__image" src="img/photo/wing-mobile.jpg" width="280" height="180" alt="Фотография пользователя">
             </a>
             <p class="gallery__publisher">
               <b class="gallery__publisher-name">Надежда</b>
               <time class="gallery__publisher-time" datetime="2021-11-29T15:15">(45 часов назад)</time>
             </p>
             <p class="gallery__text">Всем GM и взаимные лайки!</p>
-            <p class="gallery__like like">
-              <button class="like__button" type="button" aria-label="Поставить лайк"></button>
-              <span class="like__count">Нравится: 2560</span>
+            <p class="gallery__like">
+              <button class="gallery__button" type="button" aria-label="Поставить лайк"></button>
+              <span class="gallery__count">Нравится: 2560</span>
             </p>
           </li>
         </ul>
@@ -153,75 +165,83 @@
     <section class="editor">
       <h2 class="visually-hidden">Отредактируйте и загрузите свою фотографию</h2>
       <p class="editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-      <div class="editor__container">
-        <form class="form-editor" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
-          <div class="form-editor__image-wrapper">
-            <input class="form-editor__file" type="file" id="image" name="image">
-            <label class="form-editor__label" for="image" aria-label="Загрузите изображение"></label>
-            <img class="form-editor__image" src="" width="" height="" alt="Фотография пользователя">
-          </div>
-          <div class="form-editor__controls">
-            <ul class="form-editor__list">
-              <li class="form-editor__item">
-                <button class="form-editor__button form-editor__button--current" type="button" aria-label="Обрезка">
-                  <svg class="form-editor__icon" width="" height="">
-
-                  </svg>
-                </button>
-              </li>
-              <li class="form-editor__item">
-                <button class="form-editor__button" type="button" aria-label="Заливка">
-                  <svg class="form-editor__icon" width="" height="">
-
-                  </svg>
-                </button>
-              </li>
-              <li class="form-editor__item">
-                <button class="form-editor__button" type="button" aria-label="Контрастность">
-                  <svg class="form-editor__icon" width="" height="">
-
-                  </svg>
-                </button>
-              </li>
-            </ul>
-            <input class="form-editor__range" type="range" min="1" max="100" name="range" value="80">
-          </div>
-          <div class="form-editor__buttons">
-            <button class="form-editor__button form-editor__button--submit" type="submit">Запостить</button>
-            <button class="form-editor__button" type="reset">Отмена</button>
-          </div>
-        </form>
-      </div>
+      <form class="form-editor" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+        <div class="form-editor__image-wrapper">
+          <input class="form-editor__file" type="file" id="image" name="image">
+          <label class="form-editor__label" for="image" aria-label="Загрузите изображение"></label>
+          <img class="form-editor__image" src="img/photo/road-mobile.jpg" width="280" height="374" alt="Фотография пользователя">
+        </div>
+        <div class="form-editor__controls">
+          <ul class="form-editor__list">
+            <li class="form-editor__item">
+              <button class="form-editor__toggle form-editor__toggle--current" type="button" aria-label="Обрезка">
+                <svg class="form-editor__icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="44" height="44">
+                  <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#d22856" />
+                </svg>
+              </button>
+            </li>
+            <li class="form-editor__item">
+              <button class="form-editor__toggle" type="button" aria-label="Заливка">
+                <svg class="form-editor__icon" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="43">
+                  <path
+                    d="M33.12 17.88L15.24 0L12.41 2.83L17.17 7.59L6.88 17.88C6.3182 18.4425 6.00264 19.205 6.00264 20C6.00264 20.795 6.3182 21.5575 6.88 22.12L17.88 33.12C18.4425 33.6818 19.205 33.9974 20 33.9974C20.795 33.9974 21.5575 33.6818 22.12 33.12L33.12 22.12C33.6818 21.5575 33.9974 20.795 33.9974 20C33.9974 19.205 33.6818 18.4425 33.12 17.88ZM10.41 20L20 10.42L29.59 20H10.41ZM38 23C38 23 34 27.33 34 30C34 31.0609 34.4214 32.0783 35.1716 32.8284C35.9217 33.5786 36.9391 34 38 34C39.0609 34 40.0783 33.5786 40.8284 32.8284C41.5786 32.0783 42 31.0609 42 30C42 27.33 38 23 38 23Z"
+                    fill="rgba(40, 54, 69, 0.3)" />
+                  <path d="M48 40H0V43H48V40Z" fill="rgba(40, 54, 69, 0.3)" />
+                </svg>
+              </button>
+            </li>
+            <li class="form-editor__item">
+              <button class="form-editor__toggle" type="button" aria-label="Контрастность">
+                <svg class="form-editor__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                  <path
+                    d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"
+                    fill="rgba(40, 54, 69, 0.3)" />
+                  <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="rgba(40, 54, 69, 0.3)" />
+                </svg>
+              </button>
+            </li>
+          </ul>
+          <input class="form-editor__range" type="range" min="1" max="100" name="range" value="86">
+        </div>
+        <div class="form-editor__buttons">
+          <button class="button button--submit" type="submit">Запостить</button>
+          <button class="button button--cancel" type="reset">Отмена</button>
+        </div>
+      </form>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__container">
       <a class="page-footer__logo" href="index.html" aria-label="Логотип сайта Pink">
-        <svg class="page-footer__logo-img" width="" height="">
-
+        <svg class="page-footer__logo-img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="20px" y="22px" width="74" height="23">
+          <path
+            d="M.005 1.549A1.286 1.286 0 0 1 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04zM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389zm9.081.03A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874V21.65a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04zm25.264-.03a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.27 1.27 0 0 1-.096-.485V1.389h-.01z"
+            fill="#283645" />
         </svg>
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="https://twitter.com" aria-label="Twitter">
-              <svg class="social__icon" width="" height="">
-
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="18" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.564.169A3.675 3.675 0 0 1 13.672.14c.688.196 1.291.59 1.723 1.122.71-.21 1.41-.447 2.131-.656a2.03 2.03 0 0 1-.253.917c-.157.284-.38.533-.653.729.253.026.508-.002.747-.081.24-.08.456-.208.633-.376-.099.414-.3.801-.588 1.131-.287.33-.653.594-1.07.772-.247 6.27-3.367 10.467-10.689 10.296H5.15c-.443 0-4.418-.428-5.149-1.75 1.752.245 3.539-.147 4.984-1.095-1.03-.286-2.852-.447-3.161-2.74.388.133.81.163 1.215.085C1.76 7.705.34 7.039.422 4.993c.398.306.905.462 1.421.438C1.102 5.203-.247 2.31.896.825c1.926 1.723 3.964 3.35 7.59 3.512C8.711 2.205 9.69.777 11.563.169Z"
+                  fill="#d22856" />
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.facebook.com" aria-label="Facebook">
-              <svg class="social__icon" width="" height="">
-
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="9" height="18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.509 3.193H9V0H6.02C2.762.171 1.6 2.271 2.077 5.816H0v3.336h2.076V18h3.945V9.152h2.958V5.816H6.01c-.02-.998-.041-2.29.499-2.623Z" fill="#d22856" />
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link" href="https://www.youtube.com" aria-label="Youtube">
-              <svg class="social__icon" width="" height="">
-
+              <svg class="social__icon" aria-hidden="true" focusable="false" width="15" height="13" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.834 12.809a1.257 1.257 0 0 1-1.285.03 1.097 1.097 0 0 1-.443-.457.97.97 0 0 1-.092-.603V1.221A.97.97 0 0 1 .106.618C.2.429.355.27.549.16a1.256 1.256 0 0 1 1.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502Z" fill="#d22856" />
               </svg>
             </a>
           </li>
@@ -230,8 +250,10 @@
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru" aria-label="Логотип HTML Academy">
-          <svg class="page-footer__copyright-icon" width="" height="">
-
+          <svg class="page-footer__copyright-icon" aria-hidden="true" focusable="false" width="27" height="34" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"
+              fill="#d22856" />
           </svg>
         </a>
       </div>

@@ -1,0 +1,236 @@
+.contest-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contest-form__wrapper {
+  background-color: @light-gray;
+  width: 100%;
+}
+
+.contest-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  &--user {
+    padding-bottom: 10px;
+  }
+
+  &--contacts {
+    padding: 13px 0;
+  }
+}
+
+.contest-form__list {
+  list-style-type: none;
+  padding: 0;
+
+  &--achievements {
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+
+  &--apps {
+    margin-top: 11px;
+    margin-bottom: 0;
+  }
+}
+
+.contest-form__label {
+  margin-left: 24px;
+  color: @pink;
+  line-height: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.contest-form__legend {
+  max-width: 220px;
+  line-height: 18px;
+  color: @pink;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 39px 0 29px 0;
+  margin: 0 auto;
+
+  &--apps {
+    padding-top: 37px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--padding {
+    padding-bottom: 8px;
+  }
+}
+
+.contest-form__input-text {
+  display: block;
+  width: 238px;
+  height: 59px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid @middle-gray;
+  margin: 5px 0 17px 0;
+  outline: none;
+
+  &:hover {
+    border-color: @dark-gray;
+  }
+
+  &:focus {
+    border-color: @pink;
+  }
+}
+
+.contest-form__item {
+  &--achievements {
+    padding-bottom: 52px;
+    position: relative;
+  }
+
+  &--apps {
+    padding-bottom: 45px;
+    position: relative;
+  }
+}
+
+.contest-form__label-check {
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.contest-form__checkbox + .contest-form__label-check::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  top: -5px;
+  left: -60px;
+  border: 2px solid @middle-gray;
+  background-color: @white;
+}
+
+.contest-form__checkbox:hover + .contest-form__label-check::before,
+.contest-form__checkbox:focus + .contest-form__label-check::before {
+  border-color: @dark-gray;
+}
+
+.contest-form__checkbox:active + .contest-form__label-check::before {
+  border-color: @pink;
+}
+
+.contest-form__checkbox:checked + .contest-form__label-check::before {
+  background: @white url("../img/pink-tick.svg") center no-repeat;
+  z-index: 1;
+}
+
+.contest-form__radio + .contest-form__label-check::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  top: -4px;
+  left: -70px;
+  border: 2px solid @middle-gray;
+  background-color: @white;
+  border-radius: 50%;
+}
+
+.contest-form__radio:checked + .contest-form__label-check::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 8px;
+  left: -58px;
+  width: 15px;
+  height: 15px;
+  color: @pink;
+  background-color: @pink;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.contest-form__radio:hover + .contest-form__label-check::before,
+.contest-form__radio:focus + .contest-form__label-check::before {
+  border-color: @dark-gray;
+}
+
+.contest-form__radio:active + .contest-form__label-check::before {
+  border-color: @pink;
+}
+
+.contest-form__textarea {
+  width: 240px;
+  height: 180px;
+  resize: none;
+  margin: 9px 0 50px 0;
+  padding: 14px 20px 0 20px;
+  line-height: 30px;
+  border: 2px solid @middle-gray;
+  font-size: 18px;
+  outline: none;
+
+  &:hover {
+    border-color: @dark-gray;
+  }
+
+  &:focus {
+    border-color: @pink;
+  }
+}
+
+.contest-form__button {
+  display: block;
+  width: 280px;
+  min-height: 63px;
+  color: @white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  text-transform: uppercase;
+  border: 2px solid @light-green;
+  background-color: @light-green;
+  border-radius: 3px;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid @dark-green;
+    background-color: @dark-green;
+  }
+
+  &:active {
+    color: @middle-gray;
+  }
+
+  &:disabled {
+    border: 2px solid @middle-gray;
+    background-color: @middle-gray;
+  }
+}
+
+.contest-form__text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 34px 0 55px 0;
+}
+
+.contest-form__asterix {
+  color: @pink;
+}

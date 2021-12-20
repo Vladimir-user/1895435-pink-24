@@ -1,0 +1,50 @@
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.page-footer__logo {
+  display: block;
+  width: 145px;
+  height: 40px;
+  background: url("../img/pink-glasses.svg") left no-repeat;
+  outline: none;
+  margin-bottom: 38px;
+
+  &:hover path,
+  &:focus path {
+    fill: @pink;
+  }
+
+  &:active path {
+    fill: @dark-gray;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-img {
+  margin: 17px 0 0 71px;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__copyright-link {
+  outline: none;
+
+  &:hover path,
+  &:focus path {
+    fill: @dark-gray;
+  }
+
+  &:active path {
+    fill: fade(@dark-gray, 0.3);
+  }
+}

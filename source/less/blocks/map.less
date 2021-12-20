@@ -1,0 +1,18 @@
+.map {
+  display: block;
+  position: relative;
+  width: 320px;
+  height: 200px;
+  background: url("../img/map-marker.svg") top 95px center no-repeat, url("../img/map-mobile.jpg") center no-repeat;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: (@mobile-width / 2) solid transparent;
+    border-top: (@mobile-width / 10) solid @white;
+  }
+}
