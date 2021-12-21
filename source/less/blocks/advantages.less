@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
   background: linear-gradient(174deg, @white 24%, @light-gray 20%);
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__wrapper {
@@ -17,6 +22,10 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 28px;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+  }
 }
 
 .advantages__list {
@@ -41,4 +50,10 @@
 .advantages__item-text {
   padding: 12px 0 20px 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
 }

@@ -6,6 +6,10 @@
   color: @white;
   transform: translateX(-50%);
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .page-header__container {
@@ -15,6 +19,11 @@
   align-items: center;
   padding: 15px 20px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    padding: 40px 20px;
+  }
 }
 
 .page-header__logo {
@@ -28,6 +37,10 @@
 
   &:active path {
     fill: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 248px;
   }
 }
 
@@ -45,5 +58,9 @@
 
   &:active path {
     opacity: 30%;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 248px;
   }
 }
