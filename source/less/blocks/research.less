@@ -1,3 +1,22 @@
-.research {
-  display: none;
+@media (min-width: @tablet-width) {
+  .research {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    //width: 320px;
+  }
+
+  .research__wrapper {
+    width: 320px;
+  }
+}
+
+.research__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.research__link {
+  color: @pink;
 }
