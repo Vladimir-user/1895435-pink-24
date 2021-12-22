@@ -23,3 +23,25 @@
   padding-top: 17px;
   padding-bottom: 13px;
 }
+
+@media (min-width: @desktop-width) {
+  .main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 600px;
+  }
+
+  .main-menu__item {
+    background-color: transparent;
+    border: none;
+  }
+
+  .main-menu__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
+}
