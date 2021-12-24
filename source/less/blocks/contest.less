@@ -1,3 +1,10 @@
+.contest {
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
 .contest__title {
   width: 280px;
   text-align: center;
@@ -6,5 +13,21 @@
 
   &--hidden {
     display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 480px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    padding-top: 100px;
+    margin: 0 auto;
+
+    &--hidden {
+      display: block;
+      margin: 0 auto;
+      padding-top: 0;
+      padding-bottom: 80px;
+    }
   }
 }

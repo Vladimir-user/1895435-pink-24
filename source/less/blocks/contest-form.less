@@ -7,6 +7,10 @@
 .contest-form__wrapper {
   background-color: @light-gray;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
 }
 
 .contest-form__fieldset {
@@ -17,8 +21,17 @@
   padding: 0;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    border: 2px solid @middle-gray;
+  }
+
   &--user {
     padding-bottom: 10px;
+
+    @media (min-width: @tablet-width) {
+      border: 0;
+    }
   }
 
   &--contacts {
@@ -33,6 +46,10 @@
   &--achievements {
     margin-left: 40px;
     margin-bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 200px;
+    }
   }
 
   &--apps {
@@ -47,6 +64,11 @@
   line-height: 30px;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-right: 20px;
+  }
 }
 
 .contest-form__legend {
@@ -57,6 +79,11 @@
   text-align: center;
   padding: 39px 0 29px 0;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 100%;
+    padding: 30px 25px 30px 25px;
+  }
 
   &--apps {
     padding-top: 37px;
@@ -89,9 +116,19 @@
   &:focus {
     border-color: @pink;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .contest-form__item {
+
+  @media (min-width: @tablet-width){
+    display: flex;
+    align-items: center;
+  }
+
   &--achievements {
     padding-bottom: 52px;
     position: relative;
