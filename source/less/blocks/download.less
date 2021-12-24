@@ -6,6 +6,17 @@
   color: @white;
   position: relative;
   margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 318px;
+    background: @dark-blue url("../img/back-tablet@1x.jpg") center no-repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 588px;
+    background: @dark-blue url("../img/back-desktop@1x.jpg") center no-repeat;
+    margin-bottom: 70px;
+  }
 }
 
 .download__slogan {
@@ -17,6 +28,20 @@
   padding-top: 90px;
   padding-bottom: 317px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-top: 205px;
+    padding-bottom: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .download__list {
@@ -28,6 +53,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 16px;
+    padding-bottom: 6px;
+  }
 }
 
 .download__info {
@@ -37,6 +67,11 @@
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    font-size: 18px;
+  }
 }
 
 .download__link {

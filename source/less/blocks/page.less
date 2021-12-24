@@ -11,4 +11,17 @@
   font-weight: 400;
   color: @font-color-base;
   background-color: @bg-color-body;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+  }
+}
+
+.page__main {
+  padding: 0;
+  margin: 0 auto;
 }

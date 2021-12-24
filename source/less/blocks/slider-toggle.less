@@ -30,4 +30,8 @@
   &:not(&--current):active {
     background-color: fade(@dark-gray, 10%);
   }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

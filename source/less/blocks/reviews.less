@@ -6,6 +6,10 @@
   top: -45px;
   position: relative;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
 }
 
 .reviews__list {
@@ -28,6 +32,11 @@
   line-height: 30px;
   order: 1;
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 500px;
+    order: -1;
+  }
 }
 
 .reviews__author {
@@ -40,4 +49,8 @@
 
 .reviews__info {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

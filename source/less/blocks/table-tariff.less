@@ -5,6 +5,10 @@
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 622px;
+  }
 }
 
 .table-tariff__header {
@@ -15,22 +19,35 @@
   vertical-align: top;
   border-right: 2px solid @middle-gray;
 
+  @media (min-width: @tablet-width) {
+    width: 173px;
+  }
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      background-color: transparent;
+    }
+  }
+
   &--current {
     background: @dark-gray url("../img/hit-ribbon.svg") no-repeat;
     position: relative;
-  }
 
-  &::before {
-    content: "ХИТ";
-    position: absolute;
-    width: 74px;
-    height: 74px;
-    color: @white;
-    font-weight: 300;
-    line-height: 30px;
-    transform: rotate(-45deg);
-    top: 10px;
-    left: 4px;
+    &::before {
+      content: "ХИТ";
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      color: @white;
+      font-weight: 300;
+      line-height: 30px;
+      transform: rotate(-45deg);
+      top: 10px;
+      left: 4px;
+    }
   }
 }
 
@@ -58,6 +75,17 @@
   border-right: 2px solid @middle-gray;
   padding: 14px 20px;
   vertical-align: middle;
+
+  &--hidden {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      border-left: 2px solid @middle-gray;
+      line-height: 32px;
+      background-clip: padding-box;
+    }
+  }
 }
 
 .table-tariff__name {
@@ -66,6 +94,10 @@
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .table-tariff__value {
