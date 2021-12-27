@@ -22,8 +22,8 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
     border: 2px solid @middle-gray;
+    width: 100%;
   }
 
   &--user {
@@ -43,12 +43,16 @@
   list-style-type: none;
   padding: 0;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+
   &--achievements {
     margin-left: 40px;
     margin-bottom: 0;
 
     @media (min-width: @tablet-width) {
-      padding-right: 200px;
+      padding-left: 200px;
     }
   }
 
@@ -91,6 +95,10 @@
 
   &--hidden {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
   }
 
   &--padding {
@@ -124,7 +132,7 @@
 
 .contest-form__item {
 
-  @media (min-width: @tablet-width){
+  @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
   }
