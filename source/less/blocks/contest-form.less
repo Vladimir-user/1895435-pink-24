@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contest-form__wrapper {
@@ -10,6 +15,18 @@
 
   @media (min-width: @tablet-width) {
     background-color: @white;
+  }
+
+  &--achievements {
+    @media (min-width: @tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--apps {
+    @media (min-width: @desktop-width) {
+      width: 431px;
+    }
   }
 }
 
@@ -32,10 +49,25 @@
     @media (min-width: @tablet-width) {
       border: 0;
     }
+
+    @media (min-width: @desktop-width) {
+      width: 433px;
+      padding-right: 70px;
+    }
   }
 
   &--contacts {
     padding: 13px 0;
+
+    @media (min-width: @tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--comments {
+    @media (min-width: @tablet-width) {
+      order: 5;
+    }
   }
 }
 
@@ -54,11 +86,28 @@
     @media (min-width: @tablet-width) {
       padding-left: 200px;
     }
+
+    @media (min-width: @desktop-width) {
+      height: 228px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
   }
 
   &--apps {
     margin-top: 11px;
     margin-bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 220px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: @desktop-width) {
+      display: flex;
+    }
   }
 }
 
@@ -72,6 +121,13 @@
   @media (min-width: @tablet-width) {
     margin: 0;
     padding-right: 20px;
+  }
+
+  &--contacts {
+    @media (min-width: @tablet-width) {
+      padding-left: 20px;
+      order: 1;
+    }
   }
 }
 
@@ -128,10 +184,19 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+
+  &--contacts {
+    @media (min-width: @tablet-width) {
+      width: 500px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 370px;
+    }
+  }
 }
 
 .contest-form__item {
-
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
@@ -145,6 +210,14 @@
   &--apps {
     padding-bottom: 45px;
     position: relative;
+  }
+
+  &--contacts {
+    @media (min-width: @tablet-width) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 40px;
+    }
   }
 }
 
@@ -234,12 +307,30 @@
   &:focus {
     border-color: @pink;
   }
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 816px;
+  }
+}
+
+.form-contest__button-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    order: 6;
+  }
 }
 
 .contest-form__button {
   display: block;
   width: 280px;
-  min-height: 63px;
+  height: 63px;
   color: @white;
   font-size: 18px;
   font-weight: 700;
