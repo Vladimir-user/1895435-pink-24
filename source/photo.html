@@ -164,7 +164,9 @@
     </section>
     <section class="editor">
       <h2 class="visually-hidden">Отредактируйте и загрузите свою фотографию</h2>
-      <p class="editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="editor__wrapper">
+        <p class="editor__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
       <form class="form-editor" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
         <div class="form-editor__image-wrapper">
           <input class="form-editor__file" type="file" id="image" name="image">
@@ -179,6 +181,7 @@
                   <path d="M32 28H36V12C36 10.9391 35.5786 9.92172 34.8284 9.17157C34.0783 8.42143 33.0609 8 32 8H16V12H32V28ZM12 32V0H8V8H0V12H8V32C8 33.0609 8.42143 34.0783 9.17157 34.8284C9.92172 35.5786 10.9391 36 12 36H32V44H36V36H44V32H12Z" fill="#d22856" />
                 </svg>
               </button>
+              <input class="form-editor__range form-editor__range--hidden" type="range" min="1" max="100" name="crop" value="86">
             </li>
             <li class="form-editor__item">
               <button class="form-editor__toggle" type="button" aria-label="Заливка">
@@ -189,6 +192,7 @@
                   <path d="M48 40H0V43H48V40Z" fill="rgba(40, 54, 69, 0.3)" />
                 </svg>
               </button>
+              <input class="form-editor__range form-editor__range--hidden" type="range" min="1" max="100" name="fill" value="86">
             </li>
             <li class="form-editor__item">
               <button class="form-editor__toggle" type="button" aria-label="Контрастность">
@@ -199,9 +203,10 @@
                   <path d="M16 24.29C18.1536 24.1422 20.1708 23.1824 21.644 21.6046C23.1172 20.0268 23.9366 17.9486 23.9366 15.79C23.9366 13.6314 23.1172 11.5532 21.644 9.97538C20.1708 8.39759 18.1536 7.43782 16 7.29" fill="rgba(40, 54, 69, 0.3)" />
                 </svg>
               </button>
+              <input class="form-editor__range form-editor__range--hidden" type="range" min="1" max="100" name="contrast" value="86">
             </li>
           </ul>
-          <input class="form-editor__range" type="range" min="1" max="100" name="range" value="86">
+          <input class="form-editor__range form-editor__range--common" type="range" min="1" max="100" name="common" value="86">
         </div>
         <div class="form-editor__buttons">
           <button class="button button--submit" type="submit">Запостить</button>

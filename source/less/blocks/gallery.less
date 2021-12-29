@@ -17,13 +17,19 @@
     width: 620px;
     padding: 0 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 20px;
+    width: 940px;
+    padding: 0 130px;
+  }
 }
 
 .gallery__item {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: space-between;
   background-color: @light-gray;
   margin-bottom: 24px;
   width: 280px;
@@ -37,6 +43,10 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
+
+      @media (min-width: @desktop-width) {
+        grid-column: 1 / 4;
+      }
     }
   }
 }
@@ -83,6 +93,11 @@
   align-items: center;
   padding: 0 17px;
   margin: 12px 0 14px 0;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
 
 .gallery__button {
