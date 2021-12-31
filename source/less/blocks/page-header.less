@@ -7,6 +7,10 @@
   transform: translateX(-50%);
   z-index: 1;
 
+  &--dark {
+    background-color: @dark-gray;
+  }
+
   @media (min-width: @tablet-width) {
     width: 100%;
   }
@@ -15,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: @bg-color-header;
     width: 100%;
   }
 }
