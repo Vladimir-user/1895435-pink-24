@@ -1,18 +1,18 @@
 .page-header {
-  position: absolute;
-  width: @mobile-width;
-  left: 50%;
-  background-color: @bg-color-header;
+  width: 100%;
   color: @white;
-  transform: translateX(-50%);
   z-index: 1;
+  position: relative;
+  background-color: @dark-gray;
 
   &--dark {
     background-color: @dark-gray;
+    position: absolute;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
+  &--light {
+    background-color: @bg-color-header;
+    position: absolute;
   }
 
   @media (min-width: @desktop-width) {
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     background-color: @bg-color-header;
-    width: 100%;
+    position: absolute;
   }
 }
 
@@ -29,6 +29,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
   padding: 15px 20px;
   box-sizing: border-box;
 
