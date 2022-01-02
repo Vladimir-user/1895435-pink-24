@@ -20,7 +20,8 @@
   border-right: 2px solid @middle-gray;
 
   @media (min-width: @tablet-width) {
-    width: 173px;
+    width: 155px;
+    padding-bottom: 0;
   }
 
   &--hidden {
@@ -29,6 +30,9 @@
     @media (min-width: @tablet-width) {
       display: block;
       background-color: transparent;
+      height: 77px;
+      box-sizing: content-box;
+      border-bottom: 2px solid @middle-gray;
     }
   }
 
@@ -66,24 +70,28 @@
   color: @white;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 11px;
+  }
 }
 
 .table-tariff__cell {
   background-color: @white;
-  background-clip: padding-box;
   border-bottom: 2px solid @middle-gray;
   border-right: 2px solid @middle-gray;
   padding: 14px 20px;
-  vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 0 5px 0;
+  }
 
   &--hidden {
     display: none;
 
     @media (min-width: @tablet-width) {
-      display: block;
+      display: table-cell;
       border-left: 2px solid @middle-gray;
-      line-height: 32px;
-      background-clip: padding-box;
     }
   }
 }
@@ -97,6 +105,14 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  &--hidden {
+    @media (min-width: @tablet-width) {
+      display: block;
+      text-transform: none;
+      padding: 0 0 1px 15px;
+    }
   }
 }
 
@@ -113,5 +129,9 @@
 
   &--not {
     background: url("../img/icon-no.svg") no-repeat center;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 120px;
   }
 }

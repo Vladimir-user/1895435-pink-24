@@ -7,6 +7,13 @@
   margin: 0 auto;
   margin-bottom: 40px;
 
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 374px;
+    background: url("../img/map-marker.svg") top 192px center no-repeat, url("../img/map-tablet.webp") center no-repeat;
+    margin-bottom: 35px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,5 +21,10 @@
     left: 0;
     border: (@mobile-width / 2) solid transparent;
     border-top: (@mobile-width / 10) solid @white;
+
+    @media (min-width: @tablet-width) {
+      border: (@tablet-width / 2) solid transparent;
+      border-top: (@tablet-width / 10) solid @white;
+    }
   }
 }

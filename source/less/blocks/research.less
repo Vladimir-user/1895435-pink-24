@@ -1,16 +1,18 @@
 .research {
   display: none;
-}
 
-@media (min-width: @tablet-width) {
-  .research {
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 52px 0 82px 0;
   }
+}
 
-  .research__wrapper {
+.research__wrapper {
+  @media (min-width: @tablet-width) {
     width: 320px;
+    padding-left: 60px;
   }
 }
 
@@ -18,8 +20,17 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  margin: 0;
+  padding: 42px 0 0 10px;
+}
+
+.research__text {
+  margin: 0;
+  padding: 12px 0 0 10px;
 }
 
 .research__link {
+  display: block;
   color: @pink;
+  padding: 10px;
 }
