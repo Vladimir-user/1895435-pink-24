@@ -7,12 +7,22 @@
     justify-content: center;
     padding: 52px 0 82px 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 100px 0;
+    background-color: @light-gray;
+  }
 }
 
 .research__wrapper {
   @media (min-width: @tablet-width) {
     width: 320px;
     padding-left: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+    padding-left: 81px;
   }
 }
 
@@ -22,15 +32,32 @@
   line-height: 36px;
   margin: 0;
   padding: 42px 0 0 10px;
+  width: 170px;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding: 79px 0 10px 10px;
+  }
 }
 
 .research__text {
   margin: 0;
   padding: 12px 0 0 10px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .research__link {
   display: block;
   color: @pink;
   padding: 10px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

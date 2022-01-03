@@ -14,6 +14,13 @@
     margin-bottom: 35px;
   }
 
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 502px;
+    background: url("../img/map-marker.svg") top 265px center no-repeat, url("../img/map-desktop.webp") center no-repeat;
+    margin-bottom: 72px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -25,6 +32,11 @@
     @media (min-width: @tablet-width) {
       border: (@tablet-width / 2) solid transparent;
       border-top: (@tablet-width / 10) solid @white;
+    }
+
+    @media (min-width: @desktop-width) {
+      border: (@desktop-width / 2) solid transparent;
+      border-top: (@desktop-width / 10) solid @white;
     }
   }
 }

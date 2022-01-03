@@ -1,0 +1,27 @@
+.slider-nav__button {
+  width: 22px;
+  height: 41px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+
+    &--left {
+      position: absolute;
+      top: 215px;
+      left: -118px;
+      background-image: url("../img/left-arrow.webp");
+    }
+
+    &--right {
+      position: absolute;
+      top: 215px;
+      right: -118px;
+      background-image: url("../img/right-arrow.webp");
+    }
+  }
+}

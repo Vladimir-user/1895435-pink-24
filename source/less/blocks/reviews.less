@@ -2,9 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
-    top: 0;
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    padding-top: 169px;
+    padding-bottom: 20px;
+    background: url("../img/quotes.webp") top 75px center no-repeat;
   }
 }
 
@@ -34,7 +39,10 @@
     max-width: 620px;
     font-size: 18px;
     order: -1;
-    //margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 700px;
   }
 }
 
@@ -49,6 +57,11 @@
     margin-top: 3px;
     font-size: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 1px;
+    font-size: 24px;
+  }
 }
 
 .reviews__info {
@@ -57,5 +70,10 @@
   @media (min-width: @tablet-width) {
     display: block;
     margin: 2px 0 40px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin: 5px 0 0 0;
   }
 }
