@@ -4,6 +4,10 @@
   padding: 0;
   margin: 0 auto;
 
+  &--close {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     margin: 0 auto;
@@ -20,7 +24,7 @@
 
 .main-menu__item {
   background-color: @dark-gray;
-  border-top: 1px solid fade(@white, 15%);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid @black;
   text-align: center;
 
@@ -48,7 +52,7 @@
   }
 
   &:active {
-    color: fade(@white, 30%);
+    opacity: 30%;
   }
 
   @media (min-width: @desktop-width) {

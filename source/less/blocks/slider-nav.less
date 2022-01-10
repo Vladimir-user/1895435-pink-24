@@ -3,25 +3,32 @@
   height: 41px;
   background-color: transparent;
   border: 0;
+  opacity: 30%;
   outline: none;
   cursor: pointer;
+  position: absolute;
   display: none;
+
+  &:hover,
+  &:focus {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 10%;
+  }
 
   @media (min-width: @desktop-width) {
     display: block;
 
     &--left {
-      position: absolute;
-      top: 215px;
-      left: -118px;
-      background-image: url("../img/left-arrow.webp");
+      top: 214px;
+      left: -125px;
     }
 
     &--right {
-      position: absolute;
-      top: 215px;
-      right: -118px;
-      background-image: url("../img/right-arrow.webp");
+      top: 214px;
+      right: -115px;
     }
   }
 }
