@@ -15,4 +15,3 @@ headerToggle.addEventListener('click', function () {
   headerToggle.classList.toggle('page-header__toggle--close');
   mainMenu.classList.toggle('main-menu--close');
 })
-
