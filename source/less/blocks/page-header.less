@@ -2,17 +2,22 @@
   width: 100%;
   color: @white;
   z-index: 1;
-  position: absolute;
   background-color: @dark-gray;
 
   &--light {
     background-color: @bg-color-header;
   }
 
+  &--absolute {
+    position: absolute;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: @bg-color-header;
+    position: absolute;
   }
 }
 
@@ -75,25 +80,33 @@
 
   &--active {
     display: block;
+
+    .page-header__icon-open {
+      display: block;
+    }
+
+    .page-header__icon-close {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.page-header__icon-open {
-  display: none;
-
-  &--active {
+  &--close {
     display: block;
-  }
-}
 
-.page-header__icon-close {
-  display: none;
+    .page-header__icon-open {
+      display: none;
+    }
 
-  &--active {
-    display: block;
+    .page-header__icon-close {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
