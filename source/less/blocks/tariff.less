@@ -1,10 +1,19 @@
 .tariff {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(176deg, @white 20%, @light-gray 20%);
+  background: linear-gradient(176deg, @white 12%, @light-gray 10%);
   padding-bottom: 50px;
+  padding-top: 22px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(176deg, @white 16%, @light-gray 12%);
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(176deg, @white 20%, @light-gray 20%);
+    padding-top: 78px;
+    padding-bottom: 53px;
+  }
 }
 
 .tariff__wrapper {

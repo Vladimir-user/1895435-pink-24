@@ -7,6 +7,20 @@
   margin: 0 auto;
   margin-bottom: 40px;
 
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 374px;
+    background: url("../img/map-marker.svg") top 192px center no-repeat, url("../img/map-tablet.webp") center no-repeat;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    height: 502px;
+    background: url("../img/map-marker.svg") top 265px center no-repeat, url("../img/map-desktop.webp") center no-repeat;
+    margin-bottom: 72px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,5 +28,15 @@
     left: 0;
     border: (@mobile-width / 2) solid transparent;
     border-top: (@mobile-width / 10) solid @white;
+
+    @media (min-width: @tablet-width) {
+      border: (@tablet-width / 2) solid transparent;
+      border-top: (@tablet-width / 10) solid @white;
+    }
+
+    @media (min-width: @desktop-width) {
+      border: (@desktop-width / 2) solid transparent;
+      border-top: (@desktop-width / 10) solid @white;
+    }
   }
 }

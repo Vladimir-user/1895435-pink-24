@@ -9,6 +9,10 @@
   @media (min-width: @tablet-width) {
     width: 622px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 948px;
+  }
 }
 
 .table-tariff__header {
@@ -20,7 +24,12 @@
   border-right: 2px solid @middle-gray;
 
   @media (min-width: @tablet-width) {
-    width: 173px;
+    width: 155px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 237px;
   }
 
   &--hidden {
@@ -29,6 +38,13 @@
     @media (min-width: @tablet-width) {
       display: block;
       background-color: transparent;
+      height: 77px;
+      box-sizing: content-box;
+      border-bottom: 2px solid @middle-gray;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 97px;
     }
   }
 
@@ -58,6 +74,11 @@
   color: @white;
   text-transform: uppercase;
   margin: 12px 0 0 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    margin: 14px 0 5px 0;
+  }
 }
 
 .table-tariff__cost {
@@ -66,24 +87,33 @@
   color: @white;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    padding-bottom: 23px;
+  }
 }
 
 .table-tariff__cell {
   background-color: @white;
-  background-clip: padding-box;
   border-bottom: 2px solid @middle-gray;
   border-right: 2px solid @middle-gray;
   padding: 14px 20px;
-  vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 0 5px 0;
+  }
 
   &--hidden {
     display: none;
 
     @media (min-width: @tablet-width) {
-      display: block;
+      display: table-cell;
       border-left: 2px solid @middle-gray;
-      line-height: 32px;
-      background-clip: padding-box;
     }
   }
 }
@@ -97,6 +127,19 @@
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+
+  &--hidden {
+    @media (min-width: @tablet-width) {
+      display: block;
+      text-transform: none;
+      padding: 0 0 1px 15px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 18px;
+      padding: 5px 0 11px 25px;
+    }
   }
 }
 
@@ -113,5 +156,13 @@
 
   &--not {
     background: url("../img/icon-no.svg") no-repeat center;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 203px;
   }
 }
