@@ -8,7 +8,8 @@
     "scss": "node-sass --output-style compressed -o dist/css crs/scss",
     "serve": "browser-sync start --server --files 'dist/css/*.css, **/*.html'",
     "watch:css": "onchange 'crs/scss' -- npm run scss",
-    "start": "run-p serve watch:css"
+    "start": "run-p serve watch:css",
+    "sprite": "svgo -f src/img/icons && mkdir -p dist/images && svg-sprite-generate -d src/img/icons -o dist/images/icons.svg"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
     "browser-sync": "^2.27.7",
     "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0"
+    "onchange": "^7.1.0",
+    "svg-sprite-generator": "^0.0.7",
+    "svgo": "^2.8.0"
   }
 }
