@@ -1,10 +1,18 @@
 .editor {
   margin-bottom: 40px;
   background-color: @light-gray;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .editor__wrapper {
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 27px;
+  }
 }
 
 .editor__title {
@@ -17,6 +25,5 @@
     width: 480px;
     font-size: 18px;
     line-height: 30px;
-    font-weight: 300;
   }
 }

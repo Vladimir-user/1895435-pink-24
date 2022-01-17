@@ -40,6 +40,7 @@
     color: @pink;
     border: 3px solid @pink;
     line-height: 18px;
+    font-weight: 700;
     height: 55px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -53,9 +54,21 @@
     &:active {
       color: fade(@white, 30%);
     }
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+      margin: 10px 0 23px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+      margin: 0;
+    }
   }
 
   &--cancel {
+    height: 55px;
+    font-weight: 700;
     color: fade(@dark-gray, 10%);
     border: 3px solid fade(@dark-gray, 10%);
 
@@ -69,6 +82,15 @@
     &:active {
       background-color: fade(@dark-gray, 30%);
       color: fade(@white, 30%);
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 260px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 183px;
+      margin-left: 43px;
     }
   }
 }

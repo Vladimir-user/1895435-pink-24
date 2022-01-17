@@ -7,15 +7,18 @@
     display: grid;
     grid-template-columns: 300px 300px;
     grid-template-rows: 200px 200px;
-    column-gap: 20px;
+    column-gap: 49px;
     width: 620px;
-    padding: 0 20px;
+    padding: 40px 20px 72px 20px;
+    align-items: flex-start;
     margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 300px 640px;
-    width: 940px;
+    column-gap: 89px;
+    width: 780px;
+    padding: 38px 120px 72px 120px;
   }
 }
 
@@ -44,22 +47,37 @@
   align-items: center;
   list-style-type: none;
   padding: 0;
-  margin: 0 0 17px 0;
+  margin-top: 0;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
+    justify-content: flex-start;
     width: 260px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     width: 410px;
+    margin: 0;
   }
 }
 
 .form-editor__item {
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50px 225px;
+    justify-items: flex-start;
     align-items: center;
+    border-bottom: 1px solid @middle-gray;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 50px 316px;
+    column-gap: 44px;
+    padding-top: 14px;
+    padding-bottom: 12px;
   }
 }
 
@@ -107,21 +125,80 @@
   }
 
   @media (min-width: @tablet-width) {
+    width: 202px;
+    margin: 0;
+
     &--common {
       display: none;
     }
 
     &--hidden {
       display: block;
-      margin: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
   }
 }
 
 .form-editor__buttons {
-  padding-bottom: 47px;
+  padding-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 0;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    align-items: flex-start;
+    padding-top: 162px;
+  }
+}
+
+.form-editor__icon {
+  &--crop {
+    @media (min-width: @tablet-width) {
+      width: 22px;
+      height: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: @tablet-width) {
+      width: 24px;
+      height: 22px;
+
+      & path {
+        fill: @pink;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 48px;
+      height: 44px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: @tablet-width) {
+      width: 16px;
+      height: 16px;
+
+      & path {
+        fill: @pink;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
