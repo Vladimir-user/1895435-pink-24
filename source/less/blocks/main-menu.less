@@ -62,12 +62,17 @@
     text-transform: none;
     padding-top: 10px;
 
-    &--current {
-      border-bottom: 2px solid @white;
+    &:active {
+      color: @white;
+      opacity: 30%;
     }
 
-    &:hover {
-      color: @white;
+    &--current {
+      border-bottom: 2px solid @white;
+
+      &:hover {
+        color: @white;
+      }
     }
   }
 }

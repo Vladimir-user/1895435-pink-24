@@ -4,7 +4,13 @@
 
   @media (min-width: @tablet-width) {
     min-height: 357px;
-    background: @dark-blue url("../img/back-tablet@1x.jpg") center no-repeat;
+    background: @dark-blue url("../img/back-tablet@1x.jpg") top no-repeat;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 310px;
+    background: @dark-blue url("../img/back-desktop@1x.jpg") center no-repeat;
     margin-bottom: 0;
   }
 }
@@ -32,7 +38,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 750px;
+    width: 360px;
     padding-top: 130px;
   }
 }

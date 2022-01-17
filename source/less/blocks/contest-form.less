@@ -54,6 +54,7 @@
     @media (min-width: @desktop-width) {
       width: 433px;
       padding-right: 70px;
+      padding-top: 73px;
     }
   }
 
@@ -64,12 +65,21 @@
       order: 3;
       margin-top: 52px;
     }
+
+    @media (min-width: @desktop-width) {
+      order: 3;
+      margin-top: 10px;
+    }
   }
 
   &--comments {
     @media (min-width: @tablet-width) {
       order: 5;
       margin-top: 31px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 29px;
     }
   }
 
@@ -98,19 +108,43 @@
     }
 
     @media (min-width: @desktop-width) {
-      height: 228px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
+      padding-bottom: 8px;
+
+      :nth-child(2) {
+        order: 4;
+      }
+
+      :nth-child(3) {
+        order: 2;
+      }
+
+      :nth-child(4) {
+        order: 5;
+      }
+
+      :nth-child(5) {
+        order: 3;
+      }
+
+      :nth-child(6) {
+        order: 6;
+      }
     }
   }
 
   &--apps {
-    margin-top: 7px;
-    margin-bottom: 0;
+    margin: 9px 12px 0 0;
 
     @media (min-width: @tablet-width) {
       padding: 22px 0 10px 235px;
+      margin-right: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 21px 0 10px 267px;
     }
   }
 
@@ -134,11 +168,20 @@
     padding-top: 12px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-right: 18px;
+    padding-top: 14px;
+  }
+
   &--contacts {
     @media (min-width: @tablet-width) {
       padding-left: 18px;
       padding-top: 11px;
       order: 1;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 0 0 20px;
     }
   }
 }
@@ -157,12 +200,21 @@
     padding: 47px 25px 47px 20px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding: 50px 25px 47px 20px;
+  }
+
   &--apps {
     padding-top: 37px;
 
     @media (min-width: @tablet-width) {
       max-width: 100%;
       padding: 18px 25px 18px 20px;
+    }
+
+    @media (min-width: @desktop-width) {
+      max-width: 100%;
+      padding: 27px 20px 21px 20px;
     }
   }
 
@@ -173,6 +225,10 @@
       display: block;
       padding: 10px 25px 10px 23px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding: 10px 25px 10px 25px;
+    }
   }
 
   &--comments {
@@ -180,6 +236,10 @@
 
     @media (min-width: @tablet-width) {
       padding: 28px 25px 28px 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 28px 20px 28px 20px;
     }
   }
 }
@@ -218,7 +278,11 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 370px;
+      width: 275px;
+      margin-top: 10px;
+      background-image: url("../img/phone-icon.svg"), linear-gradient(90deg, #ffffff 84%, #e5e5e5 16%);
+      background-position: center right 20px, center right;
+      background-repeat: no-repeat;
     }
   }
 
@@ -232,7 +296,12 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 370px;
+      width: 275px;
+      margin-top: 10px;
+      margin-left: 11px;
+      background-image: url("../img/mail-icon.svg"), linear-gradient(90deg, #ffffff 84%, #e5e5e5 16%);
+      background-position: center right 22px, center right;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -247,6 +316,10 @@
   &--achievements {
     padding-bottom: 52px;
     position: relative;
+
+    @media (min-width: @desktop-width) {
+      width: 310px;
+    }
   }
 
   &--apps {
@@ -261,13 +334,23 @@
       padding-left: 60px;
       padding-bottom: 17px;
     }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 56px;
+      padding-bottom: 0;
+    }
   }
 }
 
 .contest-form__label-check {
   font-size: 18px;
   line-height: 30px;
+  padding-left: 7px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .contest-form__checkbox + .contest-form__label-check::before {
@@ -358,7 +441,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 816px;
+    width: 788px;
+    height: 110px;
+    margin-top: 6px;
+    margin-bottom: 42px;
+    padding-left: 20px;
   }
 }
 
@@ -423,4 +510,12 @@
 
 .contest-form__asterix {
   color: @pink;
+}
+
+.contest-form__add-text {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
