@@ -1,6 +1,18 @@
 .headline {
   background: @dark-blue url("../img/back-mobile.jpg") top/320px no-repeat;
   padding: 40px 0 44px 0;
+
+  @media (min-width: @tablet-width) {
+    min-height: 357px;
+    background: @dark-blue url("../img/back-tablet@1x.jpg") top no-repeat;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 310px;
+    background: @dark-blue url("../img/back-desktop@1x.jpg") center no-repeat;
+    margin-bottom: 0;
+  }
 }
 
 .headline__text {
@@ -10,23 +22,27 @@
   line-height: 33px;
   font-weight: 300;
   text-align: center;
-  padding-top: 55px;
+  padding-top: 53px;
   margin: 0 auto;
-
-  &--photo {
-    padding-bottom: 34px;
-  }
 
   @media (min-width: @tablet-width) {
     width: 480px;
     font-size: 50px;
     line-height: 68px;
     font-weight: 300;
-    padding-top: 80px;
-    padding-bottom: 40px;
+    padding-top: 138px;
   }
 
   @media (min-width: @desktop-width) {
     width: 750px;
+    padding-top: 130px;
+  }
+
+  &--photo {
+    padding-bottom: 34px;
+
+    @media (min-width: @desktop-width) {
+      width: 360px;
+    }
   }
 }
