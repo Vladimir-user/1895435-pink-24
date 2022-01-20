@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(174deg, @white 21%, @light-gray 20%);
   min-height: 960px;
+  background: linear-gradient(174deg, @white 21%, @light-gray 20%);
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -12,7 +12,10 @@
     align-items: self-start;
     margin: 0 auto;
     min-height: 680px;
-    background: linear-gradient(175deg, @white 34%, @light-gray 34%);
+/*
+    @media (min-resolution: 2dppx) {
+      background: url("../img/iphone-smile-tablet@2x.webp") fixed top 199px left 30% / 268px 547px no-repeat, linear-gradient(175deg, @white 34%, @light-gray 34%);
+    }*/
   }
 
   @media (min-width: @desktop-width) {
@@ -26,6 +29,7 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,13 +65,20 @@
 .advantages__list {
   width: 280px;
   list-style-type: none;
-  padding: 0;
-  margin: 20px 0 14px 0;
+  padding: 20px 0 286px 0;
+  margin: 0;
+  background: url("../img/iphone-smile-mobile@1x.webp") top 446px center no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/iphone-smile-mobile@2x.webp") top 446px center / 157px 320px no-repeat;
+  }
 
   @media (min-width: @tablet-width) {
+    width: 310px;
     order: 1;
     margin: 0;
-    padding: 42px 0 0 66px;
+    padding: 97px 0 7px 310px;
+    background: url("../img/iphone-smile-tablet@1x.webp") top 30px left no-repeat;
   }
 
   @media (min-width: @desktop-width) {
@@ -78,11 +89,13 @@
 }
 
 .advantages__item {
-  padding-bottom: 10px;
+  padding-bottom: 11px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     text-align: left;
+    padding-bottom: 12px;
+    padding-top: 2px;
   }
 
   @media (min-width: @desktop-width) {
