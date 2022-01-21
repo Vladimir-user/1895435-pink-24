@@ -21,6 +21,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(3, 300px);
     column-gap: 20px;
+    row-gap: 32px;
     width: 940px;
     padding: 0 130px;
   }
@@ -50,6 +51,7 @@
 
       @media (min-width: @desktop-width) {
         grid-column: 1 / 4;
+        margin-bottom: 20px;
       }
     }
   }
@@ -94,10 +96,15 @@
     margin: 22px 0 0 0;
   }
 
+  @media (min-width: @tablet-width) {
+    padding: 0 28px;
+    margin: 24px 0 0 0;
+  }
+
   &--panorama {
     @media (min-width: @tablet-width) {
-      padding: 0 30px;
-      margin: 25px 0 0 0;
+      padding: 0 28px;
+      margin: 24px 0 0 0;
     }
   }
 }
@@ -112,10 +119,14 @@
     min-height: 46px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding-left: 28px;
+  }
+
   &--panorama {
   @media (min-width: @tablet-width) {
     order: 1;
-    padding-left: 30px;
+    padding-left: 28px;
     padding-bottom: 0;
   }
   }
@@ -133,6 +144,10 @@
     margin-top: auto;
     margin-bottom: 18px;
     padding-left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 28px;
   }
 
   &--panorama {
