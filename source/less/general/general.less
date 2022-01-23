@@ -8,3 +8,17 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.shadow {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 12px;
+    top: 288px;
+    left: 0;
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+    background-position: 13px 0;
+  }
+}

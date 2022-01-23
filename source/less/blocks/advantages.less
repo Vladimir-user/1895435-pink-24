@@ -16,8 +16,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 900px;
+    min-height: 893px;
     background: linear-gradient(175deg, @white 36%, @light-gray 36%);
+    padding-bottom: 6px;
   }
 }
 
@@ -31,7 +32,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    padding-bottom: 8px;
   }
 }
 
@@ -87,24 +87,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 960px;
-    padding: 300px 0 0 0;
-    background: url("../img/iphone-gray-desktop@1x.jpg") top left 65px / 186px 382px no-repeat, url("../img/iphone-pink-desktop@1x.jpg") top left 387px / 186px 382px no-repeat, url("../img/iphone-smile-desktop@1x.jpg") top left 710px / 186px 382px no-repeat;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 960px;
-      height: 25px;
-      top: 288px;
-      left: 0;
-      background-image: url("../img/shadow.png"), url("../img/shadow.png"), url("../img/shadow.png");
-      background-repeat: no-repeat;
-      background-position: 13px 0, 335px 0, 658px 0;
-    }
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/iphone-gray-desktop@2x.jpg"), url("../img/iphone-pink-desktop@2x.jpg"), url("../img/iphone-smile-desktop@2x.jpg");
-    }
+    background-image: none;
+    padding: 0;
   }
 }
 
@@ -123,7 +107,37 @@
     position: relative;
     text-align: center;
     margin: 0 10px;
-    background-color: @light-gray;
+    padding: 300px 0 0 0;
+
+    &--first {
+      background: url("../img/iphone-gray-desktop@1x.jpg")  top center / 186px 382px no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-gray-desktop@2x.jpg");
+      }
+
+      .shadow;
+    }
+
+    &--second {
+      background: url("../img/iphone-pink-desktop@1x.jpg") top center / 186px 382px no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-pink-desktop@2x.jpg");
+      }
+
+      .shadow;
+    }
+
+    &--third {
+      background: url("../img/iphone-smile-desktop@1x.jpg") top center / 186px 382px no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-smile-desktop@2x.jpg");
+      }
+
+      .shadow;
+    }
   }
 }
 
@@ -137,6 +151,7 @@
     font-size: 30px;
     line-height: 30px;
     padding-top: 55px;
+    background-color: @light-gray;
   }
 }
 
