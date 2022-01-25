@@ -11,14 +11,16 @@
     justify-content: center;
     align-items: self-start;
     margin: 0 auto;
-    min-height: 680px;
+    min-height: 660px;
     background: linear-gradient(175deg, @white 34%, @light-gray 34%);
+    margin-bottom: 2px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 893px;
     background: linear-gradient(175deg, @white 36%, @light-gray 36%);
     padding-bottom: 6px;
+    margin-bottom: 0;
   }
 }
 
@@ -27,11 +29,12 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    padding-bottom: 0;
+    padding-bottom: 34px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    padding-bottom: 16px;
   }
 }
 
@@ -62,32 +65,20 @@
 .advantages__list {
   width: 280px;
   list-style-type: none;
-  padding: 20px 0 286px 0;
+  padding: 20px 0 10px 0;
   margin: 0;
-  position: relative;
-  background: url("../img/iphone-smile-mobile@1x.webp") top 446px center / 157px 320px no-repeat;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/iphone-smile-mobile@2x.webp");
-  }
 
   @media (min-width: @tablet-width) {
     width: 310px;
     order: 1;
     margin: 0;
-    padding: 102px 0 13px 310px;
-    background: url("../img/iphone-smile-tablet@1x.webp") top 34px left / 268px 547px no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/iphone-smile-tablet@2x.webp");
-    }
+    padding: 68px 0 0 32px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
     width: 960px;
-    background-image: none;
     padding: 0;
   }
 }
@@ -107,38 +98,78 @@
     position: relative;
     text-align: center;
     margin: 0 10px;
-    padding: 300px 0 0 0;
-
-    &--first {
-      background: url("../img/iphone-gray-desktop@1x.webp")  top center / 186px 382px no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/iphone-gray-desktop@2x.webp");
-      }
-
-      .shadow;
-    }
-
-    &--second {
-      background: url("../img/iphone-pink-desktop@1x.webp") top center / 186px 382px no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/iphone-pink-desktop@2x.webp");
-      }
-
-      .shadow;
-    }
-
-    &--third {
-      background: url("../img/iphone-smile-desktop@1x.webp") top center / 186px 382px no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/iphone-smile-desktop@2x.webp");
-      }
-
-      .shadow;
-    }
   }
+}
+
+.advantages__item-image-wrapper {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 12px;
+    top: 288px;
+    left: 0;
+    background-image: url("../img/shadow.png");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.advantages__image {
+  height: 292px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.advantages__image-after-list {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__image-after {
+  height: 278px;
+  object-fit: cover;
+  object-position: top;
+  vertical-align: bottom;
+}
+
+.advantages__image-before-list {
+  padding-right: 10px;
+
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.advantages__image-before {
+  height: 480px;
+  object-fit: cover;
+  object-position: top;
+  vertical-align: bottom;
 }
 
 .advantages__item-title {
@@ -151,7 +182,6 @@
     font-size: 30px;
     line-height: 30px;
     padding-top: 55px;
-    background-color: @light-gray;
   }
 }
 
@@ -163,11 +193,5 @@
     font-size: 18px;
     line-height: 30px;
     padding: 22px 30px 20px 30px;
-  }
-}
-
-.advantages__image {
-  @media (min-width: @desktop-width) {
-    display: none;
   }
 }
