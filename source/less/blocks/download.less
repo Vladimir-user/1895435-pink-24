@@ -2,23 +2,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../img/hand-mobile.png") top 176px center/320px 286px no-repeat, @dark-blue url("../img/back-mobile.jpg") top/320px 462px no-repeat;
+  background: url("../img/hand-mobile@1x.png") top 176px center/320px 286px no-repeat, @dark-blue url("../img/back-mobile@1x.jpg") top/320px 462px no-repeat;
   color: @white;
   position: relative;
   margin-bottom: 41px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-mobile@2x.png"), url("../img/back-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 729px;
     padding-right: 318px;
-    background: @dark-blue url("../img/back-tablet@1x.jpg") center no-repeat;
+    background: url("../img/hand-tablet@1x.png") top 186px center /660px 545px no-repeat, @dark-blue url("../img/back-tablet@1x.jpg") top center / cover no-repeat;
     margin-bottom: 47px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-tablet@2x.png"), url("../img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 853px;
     padding-right: 636px;
-    background: @dark-blue url("../img/back-desktop@1x.jpg") center no-repeat;
+    background: url("../img/hand-desktop@1x.png") top 208px center / 1050px 645px no-repeat, @dark-blue url("../img/back-desktop@1x.jpg") top center / cover no-repeat;
     margin-bottom: 64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-desktop@2x.png"), url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 

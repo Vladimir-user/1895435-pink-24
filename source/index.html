@@ -9,6 +9,9 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple.png">
   <title>HTML Academy: Пинк</title>
 </head>
 
@@ -100,21 +103,46 @@
         <p class="advantages__text">Устали от серости мегаполиса?</p>
         <p class="advantages__text">Нам есть, что вам<br>предложить!</p>
       </div>
+      <picture class="advantages__image-before-list">
+        <source class="advantages__image-before" type="image/webp" srcset="img/iphone-smile-tablet@1x.webp 1x, img/iphone-smile-tablet@2x.webp 2x">
+        <img class="advantages__image-before" src="img/iphone-smile-tablet@1x.png" srcset="img/iphone-smile-tablet@2x.png 2x" width="268" height="547" alt="Фотография пользователя">
+      </picture>
       <ul class="advantages__list">
         <li class="advantages__item">
+          <div class="advantages__item-image-wrapper">
+            <picture>
+              <source class="advantages__image" type="image/webp" srcset="img/iphone-gray-desktop@1x.webp 1x, img/iphone-gray-desktop@2x.webp 2x">
+              <img class="advantages__image" src="img/iphone-gray-desktop@1x.png" srcset="img/iphone-gray-desktop@2x.png 2x" width="186" height="382" alt="Фотография пользователя">
+            </picture>
+          </div>
           <h3 class="advantages__item-title">Поднимает настроение</h3>
           <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
         <li class="advantages__item">
+          <div class="advantages__item-image-wrapper">
+            <picture>
+              <source class="advantages__image" type="image/webp" srcset="img/iphone-pink-desktop@1x.webp 1x, img/iphone-pink-desktop@2x.webp 2x">
+              <img class="advantages__image" src="img/iphone-pink-desktop@1x.png" srcset="img/iphone-pink-desktop@2x.png 2x" width="186" height="382" alt="Фотография пользователя">
+            </picture>
+          </div>
           <h3 class="advantages__item-title">Меняет мир вокруг</h3>
           <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
         <li class="advantages__item">
+          <div class="advantages__item-image-wrapper">
+            <picture>
+              <source class="advantages__image" type="image/webp" srcset="img/iphone-smile-desktop@1x.webp 1x, img/iphone-smile-desktop@2x.webp 2x">
+              <img class="advantages__image" src="img/iphone-smile-desktop@1x.png" srcset="img/iphone-smile-desktop@2x.png 2x" width="186" height="382" alt="Фотография пользователя">
+            </picture>
+          </div>
           <h3 class="advantages__item-title">Заводит новых&nbsp;друзей</h3>
           <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <img class="advantages__image" src="img/iphone-screen-mobile.png" width="157" height="320" alt="Пример работы приложения">
+      <picture class="advantages__image-after-list">
+        <source class="advantages__image-after" type="image/webp" srcset="img/iphone-smile-mobile@1x.webp 1x, img/iphone-smile-mobile@2x.webp 2x">
+        <img class="advantages__image-after" src="img/iphone-smile-mobile@1x.png" srcset="img/iphone-smile-mobile@2x.png 2x" width="157" height="320" alt="Фотография пользователя">
+      </picture>
     </section>
 
     <section class="research">
