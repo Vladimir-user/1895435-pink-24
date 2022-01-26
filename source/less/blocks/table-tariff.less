@@ -52,6 +52,10 @@
     background: @dark-gray url("../img/hit-ribbon.svg") no-repeat;
     position: relative;
 
+    @media (min-width: @tablet-width) {
+      background-position-x: -15px;
+    }
+
     &::before {
       content: "ХИТ";
       position: absolute;
@@ -63,6 +67,11 @@
       transform: rotate(-45deg);
       top: 10px;
       left: 4px;
+
+      @media (min-width: @tablet-width) {
+        top: 4px;
+        left: -2px;
+      }
     }
   }
 }

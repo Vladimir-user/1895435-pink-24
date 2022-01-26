@@ -20,10 +20,14 @@
   <header class="page-header">
     <div class="page-header__container">
       <a class="page-header__logo" href="#" aria-label="Логотип сайта Pink">
-        <svg class="page-header__logo-img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="20px" y="22px" width="74" height="23">
-          <path
-            d="M.005 1.549A1.286 1.286 0 0 1 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04zM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389zm9.081.03A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874V21.65a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04zm25.264-.03a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.27 1.27 0 0 1-.096-.485V1.389h-.01z"
-            fill="#fff" />
+        <svg class="page-header__logo-img page-header__logo-img--mobile" width="74" height="23">
+          <use xlink:href="img/logo-pink.svg#logo-pink-mobile"></use>
+        </svg>
+        <svg class="page-header__logo-img page-header__logo-img--tablet" width="145" height="40">
+          <use xlink:href="img/logo-pink.svg#logo-pink-tablet"></use>
+        </svg>
+        <svg class="page-header__logo-img page-header__logo-img--desktop" width="147" height="40">
+          <use xlink:href="img/logo-pink.svg#logo-pink-desktop"></use>
         </svg>
       </a>
       <button class="page-header__toggle" type="button">
@@ -104,14 +108,14 @@
         <p class="advantages__text">Нам есть, что вам<br>предложить!</p>
       </div>
       <picture class="advantages__image-before-list">
-        <source class="advantages__image-before" type="image/webp" srcset="img/iphone-smile-tablet@1x.webp 1x, img/iphone-smile-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/iphone-smile-tablet@1x.webp 1x, img/iphone-smile-tablet@2x.webp 2x">
         <img class="advantages__image-before" src="img/iphone-smile-tablet@1x.png" srcset="img/iphone-smile-tablet@2x.png 2x" width="268" height="547" alt="Фотография пользователя">
       </picture>
       <ul class="advantages__list">
         <li class="advantages__item">
           <div class="advantages__item-image-wrapper">
             <picture>
-              <source class="advantages__image" type="image/webp" srcset="img/iphone-gray-desktop@1x.webp 1x, img/iphone-gray-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-gray-desktop@1x.webp 1x, img/iphone-gray-desktop@2x.webp 2x">
               <img class="advantages__image" src="img/iphone-gray-desktop@1x.png" srcset="img/iphone-gray-desktop@2x.png 2x" width="186" height="382" alt="Фотография пользователя">
             </picture>
           </div>
@@ -121,7 +125,7 @@
         <li class="advantages__item">
           <div class="advantages__item-image-wrapper">
             <picture>
-              <source class="advantages__image" type="image/webp" srcset="img/iphone-pink-desktop@1x.webp 1x, img/iphone-pink-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-pink-desktop@1x.webp 1x, img/iphone-pink-desktop@2x.webp 2x">
               <img class="advantages__image" src="img/iphone-pink-desktop@1x.png" srcset="img/iphone-pink-desktop@2x.png 2x" width="186" height="382" alt="Фотография пользователя">
             </picture>
           </div>
@@ -131,7 +135,7 @@
         <li class="advantages__item">
           <div class="advantages__item-image-wrapper">
             <picture>
-              <source class="advantages__image" type="image/webp" srcset="img/iphone-smile-desktop@1x.webp 1x, img/iphone-smile-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-smile-desktop@1x.webp 1x, img/iphone-smile-desktop@2x.webp 2x">
               <img class="advantages__image" src="img/iphone-smile-desktop@1x.png" srcset="img/iphone-smile-desktop@2x.png 2x" width="186" height="382" alt="Фотография пользователя">
             </picture>
           </div>
@@ -140,7 +144,7 @@
         </li>
       </ul>
       <picture class="advantages__image-after-list">
-        <source class="advantages__image-after" type="image/webp" srcset="img/iphone-smile-mobile@1x.webp 1x, img/iphone-smile-mobile@2x.webp 2x">
+        <source type="image/webp" srcset="img/iphone-smile-mobile@1x.webp 1x, img/iphone-smile-mobile@2x.webp 2x">
         <img class="advantages__image-after" src="img/iphone-smile-mobile@1x.png" srcset="img/iphone-smile-mobile@2x.png 2x" width="157" height="320" alt="Фотография пользователя">
       </picture>
     </section>
@@ -148,9 +152,7 @@
     <section class="research">
       <h2 class="visually-hidden">Исследование о положительном влиянии PINK</h2>
       <svg class="research__icon" aria-hidden="true" focusable="false" width="238" height="276" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m211.314 81.628 4.273-4.287c6.165-6.175 7.291-15.148 2.499-19.94-4.792-4.79-13.752-3.678-19.91 2.496l-4.305 4.311a118.265 118.265 0 0 0-59.684-25.578v-7.67h6.118c8.714 0 15.846-6.966 15.846-15.476 0-8.51-7.132-15.484-15.846-15.484H97.721c-8.714 0-15.846 6.966-15.846 15.484S89.008 30.96 97.722 30.96h6.118v7.67a118.935 118.935 0 0 0-69.052 34A119.238 119.238 0 0 0 .946 141.836a119.313 119.313 0 0 0 15.518 75.474 119.047 119.047 0 0 0 58.389 50.187 118.839 118.839 0 0 0 76.847 3.916 118.988 118.988 0 0 0 63.175-43.991 119.28 119.28 0 0 0 23.089-73.506 119.27 119.27 0 0 0-26.65-72.287zm-92.301 163.319a87.901 87.901 0 0 1-48.884-14.85 88.092 88.092 0 0 1-32.407-39.546 88.23 88.23 0 0 1-5.006-50.911A88.153 88.153 0 0 1 56.8 94.524a87.95 87.95 0 0 1 45.053-24.113 87.87 87.87 0 0 1 50.838 5.017 88.012 88.012 0 0 1 39.486 32.457 88.197 88.197 0 0 1 14.825 48.956 88.177 88.177 0 0 1-25.774 62.301 87.923 87.923 0 0 1-62.214 25.805z"
-          fill="#dedede" />
+        <use xlink:href="img/watch.svg#watch"></use>
       </svg>
       <div class="research__wrapper">
         <p class="research__title">Эффект на&nbsp;24 часа!</p>
