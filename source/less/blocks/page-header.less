@@ -44,17 +44,19 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo-link {
   outline: none;
   padding-top: 7px;
+  fill: @white;
 
-  &:hover path,
-  &:focus path {
+  &:hover,
+  &:focus {
     fill: @pink;
   }
 
-  &:active path {
-    fill: rgba(255, 255, 255, 0.3);
+  &:active {
+    fill: @white;
+    opacity: 30%;
   }
 
   @media (min-width: @tablet-width) {
@@ -65,18 +67,18 @@
 .page-header__logo-img {
   &--mobile {
     @media (min-width: @tablet-width) {
-    display: none;
+      display: none;
     }
   }
 
   &--tablet {
     display: none;
 
-	  @media (min-width: @tablet-width) {
-	    display: block;
-	  }
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
 
-	  @media (min-width: @desktop-width) {
+    @media (min-width: @desktop-width) {
       display: none;
     }
   }
