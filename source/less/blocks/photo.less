@@ -7,11 +7,29 @@
   @media (min-width: @tablet-width) {
     width: 480px;
     font-size: 18px;
-    margin: 89px auto 76px auto;
+    margin: 91px auto 76px auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 600px;
-    margin: 90px auto 88px auto;
+    margin: 90px auto 90px auto;
+  }
+}
+
+.photo__image {
+  object-fit: cover;
+
+  @media (min-width: @mobile-width) {
+    width: 280px;
+    height: 180px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
   }
 }

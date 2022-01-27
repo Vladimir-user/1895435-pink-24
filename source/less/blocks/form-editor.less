@@ -118,11 +118,22 @@
     border: 2px solid @pink;
     border-radius: 50%;
     cursor: pointer;
-
-    &:active {
-      background-color: @pink;
-    }
   }
+
+  &::-moz-range-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background-color: @white;
+    border: 2px solid @pink;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: @pink;
+  }
+
 
   &--hidden {
     display: none;
