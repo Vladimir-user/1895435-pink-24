@@ -52,7 +52,7 @@ export const clean = () => {
 
 // Copy
 const copy = (done) => {
-  gulp.src(['source/fonts/*.{woff2,woff}', 'sourse/css/style.css', 'source/*.ico', 'source/img/icon.svg', 'source/img/logo-pink.svg', 'source/img/watch.svg'], { base: 'source' })
+  gulp.src(['source/fonts/*.{woff2,woff}', 'source/css/style.css', 'source/*.ico', 'source/img/icon.svg', 'source/img/logo-pink.svg', 'source/img/watch.svg'], { base: 'source' })
     .pipe(gulp.dest('build'))
   done();
 }
@@ -126,6 +126,6 @@ const serv = (done) => {
 
 // Build
 export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(style, html, scripts, svg, createWebp));
-export const startb = gulp.series(build, serv);
+export const start = gulp.series(build, serv);
 
 export default gulp.series(styles, server, watcher);
