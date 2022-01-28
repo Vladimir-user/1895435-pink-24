@@ -21,7 +21,7 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(3, 300px);
     column-gap: 20px;
-    row-gap: 32px;
+    row-gap: 31px;
     width: 940px;
     padding: 0 130px;
   }
@@ -46,7 +46,7 @@
       justify-content: space-between;
 
       @media (min-width: @tablet-width) {
-        margin-bottom: 74px;
+        margin-bottom: 50px;
       }
 
       @media (min-width: @desktop-width) {
@@ -96,15 +96,19 @@
     margin: 22px 0 0 0;
   }
 
-  @media (min-width: @tablet-width) {
-    padding: 0 28px;
-    margin: 24px 0 0 0;
+  @media (min-width: @desktop-width) {
+    padding-left: 28px;
+    margin-top: 24px;
   }
 
   &--panorama {
     @media (min-width: @tablet-width) {
-      padding: 0 28px;
-      margin: 24px 0 0 0;
+      padding: 0 30px;
+      margin: 23px 0 0 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 28px;
     }
   }
 }
@@ -126,6 +130,11 @@
   &--panorama {
     @media (min-width: @tablet-width) {
       order: 1;
+      padding-left: 30px;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: @desktop-width) {
       padding-left: 28px;
       padding-bottom: 0;
     }
@@ -152,7 +161,7 @@
 
   &--panorama {
     @media (min-width: @tablet-width) {
-      padding-top: 14px;
+      margin-top: 25px;
       margin-bottom: 0;
     }
   }

@@ -19,11 +19,15 @@
 
   <header class="page-header">
     <div class="page-header__container">
-      <a class="page-header__logo" href="index.html" aria-label="Логотип сайта Pink">
-        <svg class="page-header__logo-img" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="20px" y="22px" width="74" height="23">
-          <path
-            d="M.005 1.549A1.286 1.286 0 0 1 1.257.262H8.39c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.033 7.358-8.802 7.358H2.538v6.801a1.28 1.28 0 0 1-.754 1.28 1.269 1.269 0 0 1-1.717-.758 1.28 1.28 0 0 1-.062-.522V1.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.394-4.875-5.961-4.875H2.588v9.881l5.484.04zM21.593 1.389a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V1.389zm9.081.03A1.278 1.278 0 0 1 31.926.173h.348a1.535 1.535 0 0 1 1.281.737l13.6 17.4V1.36A1.239 1.239 0 0 1 48.389.122c.327 0 .64.13.871.362.231.232.36.546.36.874V21.65a1.14 1.14 0 0 1-.703 1.092 1.13 1.13 0 0 1-.449.085h-.129a1.695 1.695 0 0 1-1.311-.778L33.117 4.24v17.41a1.258 1.258 0 0 1-1.191 1.247 1.238 1.238 0 0 1-1.212-1.247V1.42h-.04zm25.264-.03a1.282 1.282 0 0 1 .755-1.28 1.268 1.268 0 0 1 1.717.758c.056.168.077.346.062.522v12.295L71.228.55c.262-.271.618-.432.994-.448a1.27 1.27 0 0 1 1.222 1.256 1.29 1.29 0 0 1-.418.898l-7.947 7.897 8.573 10.53c.224.26.348.593.348.937a1.312 1.312 0 0 1-.838 1.191 1.228 1.228 0 0 1-1.497-.493L63.3 11.859l-4.828 4.846v4.886a1.27 1.27 0 0 1-.78 1.17 1.259 1.259 0 0 1-1.648-.685 1.27 1.27 0 0 1-.096-.485V1.389h-.01z"
-            fill="#fff" />
+      <a class="page-header__logo-link" href="index.html" aria-label="Логотип сайта Pink">
+        <svg class="page-header__logo-img page-header__logo-img--mobile" width="74" height="23">
+          <use xlink:href="img/logo-pink.svg#logo-pink-mobile"></use>
+        </svg>
+        <svg class="page-header__logo-img page-header__logo-img--tablet" width="145" height="40">
+          <use xlink:href="img/logo-pink.svg#logo-pink-tablet"></use>
+        </svg>
+        <svg class="page-header__logo-img page-header__logo-img--desktop" width="147" height="40">
+          <use xlink:href="img/logo-pink.svg#logo-pink-desktop"></use>
         </svg>
       </a>
       <button class="page-header__toggle page-header__toggle--active" type="button">
@@ -75,7 +79,7 @@
             <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/bridge-mobile@1x.webp 1x, img/photo/bridge-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/photo/bridge-desktop@1x.jpg 1x, img/photo/bridge-desktop@2x.jpg 2x">
             <source media="(min-width: 660px)" srcset="img/photo/bridge-tablet@1x.jpg 1x, img/photo/bridge-tablet@2x.jpg 2x">
-            <img class="photo__image"  src="img/photo/bridge-mobile@1x.jpg" srcset="img/photo/bridge-mobile@2x.jpg 2x" alt="Фотография пользователя">
+            <img class="photo__image" src="img/photo/bridge-mobile@1x.jpg" srcset="img/photo/bridge-mobile@2x.jpg 2x" alt="Фотография пользователя">
           </picture>
         </a>
         <ul class="gallery__list">
@@ -98,7 +102,7 @@
                 <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/photo/car-mobile@1x.webp 1x, img/photo/car-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo/car-desktop@1x.jpg 1x, img/photo/car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo/car-tablet@1x.jpg 1x, img/photo/car-tablet@2x.jpg 2x">
-                <img class="photo__image"  src="img/photo/car-mobile@1x.jpg" srcset="img/photo/car-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo__image" src="img/photo/car-mobile@1x.jpg" srcset="img/photo/car-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <p class="gallery__publisher">
@@ -119,7 +123,7 @@
                 <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/photo/drum-mobile@1x.webp 1x, img/photo/drum-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo/drum-desktop@1x.jpg 1x, img/photo/drum-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo/drum-tablet@1x.jpg 1x, img/photo/drum-tablet@2x.jpg 2x">
-                <img class="photo__image"  src="img/photo/drum-mobile@1x.jpg" srcset="img/photo/drum-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo__image" src="img/photo/drum-mobile@1x.jpg" srcset="img/photo/drum-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <p class="gallery__publisher">
@@ -140,7 +144,7 @@
                 <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/photo/windows-mobile@1x.webp 1x, img/photo/windows-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo/windows-desktop@1x.jpg 1x, img/photo/windows-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo/windows-tablet@1x.jpg 1x, img/photo/windows-tablet@2x.jpg 2x">
-                <img class="photo__image"  src="img/photo/windows-mobile@1x.jpg" srcset="img/photo/windows-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo__image" src="img/photo/windows-mobile@1x.jpg" srcset="img/photo/windows-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <p class="gallery__publisher">
@@ -161,7 +165,7 @@
                 <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/photo/field-mobile@1x.webp 1x, img/photo/field-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo/field-desktop@1x.jpg 1x, img/photo/field-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo/field-tablet@1x.jpg 1x, img/photo/field-tablet@2x.jpg 2x">
-                <img class="photo__image"  src="img/photo/field-mobile@1x.jpg" srcset="img/photo/field-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo__image" src="img/photo/field-mobile@1x.jpg" srcset="img/photo/field-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <p class="gallery__publisher">
@@ -182,7 +186,7 @@
                 <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/photo/legs-mobile@1x.webp 1x, img/photo/legs-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo/legs-desktop@1x.jpg 1x, img/photo/legs-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo/legs-tablet@1x.jpg 1x, img/photo/legs-tablet@2x.jpg 2x">
-                <img class="photo__image"  src="img/photo/legs-mobile@1x.jpg" srcset="img/photo/legs-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo__image" src="img/photo/legs-mobile@1x.jpg" srcset="img/photo/legs-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <p class="gallery__publisher">
@@ -203,7 +207,7 @@
                 <source type="image/webp" media="(min-width: 320px) and (max-width: 320px)" srcset="img/photo/photo/wing-mobile@1x.webp 1x, img/photo/wing-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo/wing-desktop@1x.jpg 1x, img/photo/wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo/wing-tablet@1x.jpg 1x, img/photo/wing-tablet@2x.jpg 2x">
-                <img class="photo__image"  src="img/photo/wing-mobile@1x.jpg" srcset="img/photo/wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="photo__image" src="img/photo/wing-mobile@1x.jpg" srcset="img/photo/wing-mobile@2x.jpg 2x" alt="Фотография пользователя">
               </picture>
             </a>
             <p class="gallery__publisher">
