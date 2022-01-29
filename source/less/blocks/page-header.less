@@ -44,17 +44,20 @@
   }
 }
 
+.page-header__logo-link svg {
+  fill: @white;
+}
+
 .page-header__logo-link {
   outline: none;
   padding-top: 7px;
-  fill: @white;
 
-  &:hover,
-  &:focus {
+  &:hover svg,
+  &:focus svg {
     fill: @pink;
   }
 
-  &:active {
+  &:active svg {
     fill: @white;
     opacity: 30%;
   }
