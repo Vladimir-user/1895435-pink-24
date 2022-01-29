@@ -52,7 +52,15 @@ export const clean = () => {
 
 // Copy
 const copy = (done) => {
-  gulp.src(['source/fonts/*.{woff2,woff}', 'source/css/style.css', 'source/*.ico', 'source/img/icon.svg', 'source/img/logo-pink.svg', 'source/img/watch.svg'], { base: 'source' })
+  return gulp.src([
+    'source/fonts/*.{woff2,woff}',
+    'source/*.ico',
+    'source/img/icon.svg',
+    'source/img/logo-pink.svg',
+    'source/img/watch.svg'
+  ], {
+    base: 'source'
+  })
     .pipe(gulp.dest('build'))
   done();
 }
@@ -66,11 +74,16 @@ const optimizeImages = () => {
 
 // Style
 
-const style = () => {
+export const style = async () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
-    .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -84,21 +97,25 @@ const html = () => {
 
 // Scripts
 const scripts = () => {
-  return gulp.src('source/js/load.js')
+  return gulp.src('source/js/script.js')
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
 
 // SVG
 const svg = () => {
-  return gulp.src(['source/img/*.svg', '!source/img/icon.svg', '!source/img/logo-pink.svg', '!source/img/watch.svg'])
+  return gulp.src([
+    'source/img/*.svg',
+    '!source/img/icon.svg',
+    '!source/img/logo-pink.svg',
+    '!source/img/watch.svg'
+  ])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
 
 // Sprite
-const
-  sprite = () => {
+const sprite = () => {
     return gulp.src('source/img/icons/*.svg')
       .pipe(svgo())
       .pipe(svgstore({ inlineSvg: true }))
@@ -114,9 +131,11 @@ const createWebp = () => {
 }
 
 // Serv
-const serv = (done) => {
+export const serv = (done) => {
   browser.init({
-    server: { baseDir: 'build' },
+    server: {
+      baseDir: 'build'
+    },
     cors: true,
     notify: false,
     ui: false,
