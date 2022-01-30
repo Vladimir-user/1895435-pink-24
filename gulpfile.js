@@ -10,6 +10,8 @@ import csso from 'postcss-csso';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
+import minify from 'gulp-minify';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -92,12 +94,17 @@ export const style = async () => {
 // HTML
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
     .pipe(gulp.dest('build'));
 }
 
 // Scripts
 const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(minify())
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -142,6 +149,25 @@ export const serv = (done) => {
   });
   done();
 }
+
+// Minjs
+
+export const minjs = () => {
+  return gulp.src('source/js/script.js')
+    .pipe(minify())
+    .pipe(gulp.dest('build/js'))
+}
+
+// HTMLmin
+export const minhtml = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest('build'))
+}
+
 
 // Build
 export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(style, html, scripts, svg, createWebp));
