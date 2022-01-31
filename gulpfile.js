@@ -95,16 +95,18 @@ export const style = async () => {
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({
-    collapseWhitespace: true,
-    removeComments: true
-  }))
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('build'));
 }
 
 // Scripts
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/script.js')
+    .pipe(gulp.dest('build/js'))
     .pipe(minify())
+    .pipe(rename('script.min.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
@@ -123,12 +125,12 @@ const svg = () => {
 
 // Sprite
 const sprite = () => {
-    return gulp.src('source/img/icons/*.svg')
-      .pipe(svgo())
-      .pipe(svgstore({ inlineSvg: true }))
-      .pipe(rename('sprite.svg'))
-      .pipe(gulp.dest('build/img'));
-  }
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({ inlineSvg: true }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
 
 // WebP
 const createWebp = () => {
@@ -149,25 +151,6 @@ export const serv = (done) => {
   });
   done();
 }
-
-// Minjs
-
-export const minjs = () => {
-  return gulp.src('source/js/script.js')
-    .pipe(minify())
-    .pipe(gulp.dest('build/js'))
-}
-
-// HTMLmin
-export const minhtml = () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({
-      collapseWhitespace: true,
-      removeComments: true
-    }))
-    .pipe(gulp.dest('build'))
-}
-
 
 // Build
 export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(style, html, scripts, svg, createWebp));
