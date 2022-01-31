@@ -37,8 +37,7 @@
 
 .contest-form__fieldset {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   border: 0;
   padding: 0;
   margin: 0;
@@ -59,7 +58,7 @@
     @media (min-width: @desktop-width) {
       width: 433px;
       padding-right: 70px;
-      padding-top: 73px;
+      padding-top: 72px;
     }
   }
 
@@ -104,51 +103,30 @@
   }
 
   &--achievements {
-    margin-left: 39px;
-    margin-bottom: 0;
+    padding: 13px 0 0 35px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 195px;
+      padding: 0 0 0 118px;
     }
 
     @media (min-width: @desktop-width) {
       display: flex;
-      flex-direction: row;
       flex-wrap: wrap;
       padding-bottom: 8px;
-
-      &:nth-child(2) {
-        order: 4;
-      }
-
-      &:nth-child(3) {
-        order: 2;
-      }
-
-      &:nth-child(4) {
-        order: 5;
-      }
-
-      &:nth-child(5) {
-        order: 3;
-      }
-
-      &:nth-child(6) {
-        order: 6;
-      }
     }
   }
 
   &--apps {
-    margin: 9px 12px 0 0;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 14px;
 
     @media (min-width: @tablet-width) {
-      padding: 22px 0 10px 235px;
-      margin-right: 0;
+      padding: 30px 0 10px 120px;
     }
 
     @media (min-width: @desktop-width) {
-      padding: 21px 0 10px 267px;
+      padding: 28px 0 10px 133px;
     }
   }
 
@@ -258,6 +236,7 @@
   border: 2px solid @middle-gray;
   margin: 5px 0 17px 0;
   outline: none;
+  font-family: inherit;
 
   &:hover {
     border-color: @dark-gray;
@@ -322,7 +301,7 @@
     position: relative;
 
     @media (min-width: @desktop-width) {
-      width: 310px;
+      width: 260px;
     }
   }
 
@@ -349,8 +328,11 @@
 .contest-form__label-check {
   font-size: 18px;
   line-height: 30px;
-  padding-left: 7px;
   cursor: pointer;
+
+  &--apps {
+    padding-left: 10px;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
@@ -429,6 +411,7 @@
   border: 2px solid @middle-gray;
   font-size: 18px;
   outline: none;
+  font-family: inherit;
 
   &:hover {
     border-color: @dark-gray;
@@ -505,7 +488,7 @@
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 34px 0 55px 0;
+  margin: 34px 0 56px 0;
 
   @media (min-width: @tablet-width) {
     margin: 3px 0 0 0;
