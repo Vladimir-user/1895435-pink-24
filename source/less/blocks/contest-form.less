@@ -14,27 +14,6 @@
   }
 }
 
-.contest-form__wrapper {
-  background-color: @light-gray;
-  width: 100%;
-
-  @media (min-width: @tablet-width) {
-    background-color: @white;
-  }
-
-  &--achievements {
-    @media (min-width: @tablet-width) {
-      order: 4;
-    }
-  }
-
-  &--apps {
-    @media (min-width: @desktop-width) {
-      width: 431px;
-    }
-  }
-}
-
 .contest-form__fieldset {
   display: flex;
   justify-content: center;
@@ -62,12 +41,30 @@
     }
   }
 
+  &--apps {
+    background-color: @light-gray;
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+      padding-top: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 433px;
+      order: 2;
+    }
+  }
+
   &--contacts {
     padding: 13px 0;
 
     @media (min-width: @tablet-width) {
       order: 3;
       margin-top: 52px;
+      margin-bottom: 28px;
     }
 
     @media (min-width: @desktop-width) {
@@ -87,8 +84,16 @@
   }
 
   &--achievements {
+    background-color: @light-gray;
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+
     @media (min-width: @tablet-width) {
+      background-color: transparent;
+      padding-top: 0;
       margin-top: 8px;
+      order: 4;
     }
   }
 }
@@ -103,10 +108,11 @@
   }
 
   &--achievements {
-    padding: 13px 0 0 35px;
+    padding: 43px 0 0 35px;
+    margin-bottom: 0;
 
     @media (min-width: @tablet-width) {
-      padding: 0 0 0 118px;
+      padding: 30px 0 0 118px;
     }
 
     @media (min-width: @desktop-width) {
@@ -118,7 +124,7 @@
 
   &--apps {
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 52px;
     padding-right: 14px;
 
     @media (min-width: @tablet-width) {
@@ -187,16 +193,30 @@
   }
 
   &--apps {
-    padding-top: 37px;
+    padding: 0;
+    position: absolute;
+    top: 37px;
 
     @media (min-width: @tablet-width) {
+      position: initial;
       max-width: 100%;
-      padding: 18px 25px 18px 20px;
+      padding: 18px 25px 18px 25px;
     }
 
     @media (min-width: @desktop-width) {
       max-width: 100%;
       padding: 27px 20px 21px 20px;
+    }
+  }
+
+  &--achievements {
+    padding: 0;
+    position: absolute;
+    top: 40px;
+
+    @media (min-width: @tablet-width) {
+      position: initial;
+      padding: 18px 25px 18px 25px;
     }
   }
 
