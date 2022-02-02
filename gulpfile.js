@@ -17,7 +17,7 @@ import sourcemap from 'gulp-sourcemaps';
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
+  gulp.watch('source/less/**/*.less', gulp.series(style));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
@@ -28,7 +28,7 @@ export const clean = () => {
 
 // Copy
 const copy = (done) => {
-  return gulp.src([
+  gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
     'source/img/icon.svg',
@@ -37,7 +37,7 @@ const copy = (done) => {
   ], {
     base: 'source'
   })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
   done();
 }
 
@@ -55,13 +55,12 @@ export const style = async () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('build/css'))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.css'))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest('build/css'))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest('build/css'))
@@ -131,6 +130,6 @@ export const server = (done) => {
 
 // Build
 export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(style, html, scripts, svg, sprite, createWebp));
-export const start = gulp.series(build, server);
+export const start = gulp.series(build, server, watcher);
 
-export default gulp.series(style, server, watcher);
+export default gulp.series(build, server, watcher);
