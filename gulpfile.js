@@ -116,8 +116,8 @@ const createWebp = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-// Serv
-export const serv = (done) => {
+// Server
+export const server = (done) => {
   browser.init({
     server: {
       baseDir: 'build'
@@ -131,6 +131,6 @@ export const serv = (done) => {
 
 // Build
 export const build = gulp.series(clean, copy, optimizeImages, gulp.parallel(style, html, scripts, svg, sprite, createWebp));
-export const start = gulp.series(build, serv);
+export const start = gulp.series(build, server);
 
-export default gulp.series(styles, server, watcher);
+export default gulp.series(style, server, watcher);
