@@ -14,19 +14,6 @@ import minify from 'gulp-minify';
 import htmlmin from 'gulp-htmlmin';
 import sourcemap from 'gulp-sourcemaps';
 
-// Styles
-
-export const styles = () => {
-  return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
-
 // Server
 
 const server = (done) => {
