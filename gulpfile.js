@@ -14,20 +14,6 @@ import minify from 'gulp-minify';
 import htmlmin from 'gulp-htmlmin';
 import sourcemap from 'gulp-sourcemaps';
 
-// Server
-
-const server = (done) => {
-  browser.init({
-    server: {
-      baseDir: 'source'
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
-}
-
 // Watcher
 
 const watcher = () => {
