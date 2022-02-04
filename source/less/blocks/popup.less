@@ -19,13 +19,12 @@
 
   @media (min-width: @desktop-width) {
     width: 780px;
-    min-height: 377px;
   }
 }
 
 .popup__title {
   margin: 0;
-  padding: 44px 0 10px 0;
+  padding: 44px 0 25px 0;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -33,23 +32,39 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 40px;
-    padding: 44px 100px 5px 100px;
+    padding: 44px 100px 25px 100px;
   }
 }
 
 .popup__text {
   text-align: center;
-  padding: 0 25px 22px 25px;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    padding: 0 75px 12px 75px;
+    min-height: 22px;
+    padding: 0 75px 0 75px;
   }
 
   @media (min-width: @desktop-width) {
     width: 378px;
+    min-height: 120px;
     margin: 0 auto;
-    padding: 18px 75px 38px 75px;
+  }
+
+  &--success {
+    @media (min-width: @mobile-width) {
+      padding: 0 20px 45px 20px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 0 75px 38px 75px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 75px 0 75px;
+    }
   }
 }
 
@@ -57,11 +72,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 163px;
+  height: 143px;
   background-color: @light-gray;
-  margin: 0 auto;
 
   &--white {
     background-color: @white;
+
+    @media (min-width: @desktop-width) {
+      background-color: @light-gray;
+    }
   }
 }
