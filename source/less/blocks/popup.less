@@ -16,11 +16,16 @@
   @media (min-width: @tablet-width) {
     width: 460px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 780px;
+    min-height: 377px;
+  }
 }
 
 .popup__title {
   margin: 0;
-  padding: 44px 0 37px 0;
+  padding: 44px 0 10px 0;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -28,19 +33,23 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 44px 100px 5px 100px;
   }
 }
 
 .popup__text {
   text-align: center;
-  padding: 0 25px 40px 25px;
+  padding: 0 25px 22px 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 0 75px 12px 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 378px;
+    margin: 0 auto;
+    padding: 18px 75px 38px 75px;
   }
 }
 
