@@ -142,8 +142,11 @@
 
   &--contacts {
     @media (min-width: @desktop-width) {
-      display: flex;
+      display: grid;
+      grid-template-columns: 377px 377px;
+      column-gap: 70px;
       flex-wrap: wrap;
+      padding-left: 56px;
     }
   }
 }
@@ -368,7 +371,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 56px;
+      padding-left: 0;
       padding-bottom: 0;
     }
   }
